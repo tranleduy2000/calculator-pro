@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="start_listening">Start listening</string>
+    <string name="stop_listening">Start listening</string>
+    <string name="say_something">Say</string>
+    <string name="introduction">Tap on one of the buttons to try an action</string>
+    <string name="tts_hint">Write something to speech</string>
+    <string name="repeat">Say expression</string>
+    <string name="input_something">Please input something to speak!</string>
+    <string name="speech_not_available">Speech recognition is not available on this device. Do you want to install Google app to have speech recognition?</string>
+    <string name="permission_required">You need to grant the permission to use the microphone</string>
+    <string name="enable_google_voice_typing">Please enable Google Voice Typing to use speech recognition!</string>
+</resources>
