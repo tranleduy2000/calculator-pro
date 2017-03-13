@@ -23,7 +23,11 @@ import com.example.duy.calculator.math_eval.base.Evaluator;
 
 import org.javia.arity.SyntaxException;
 
-
+/**
+ * Radix calculate
+ * <p>
+ * Logic calculate
+ */
 public abstract class LogicEvaluator {
     public static final int RESULT_OK = 1;
     public static final int RESULT_ERROR = -1;
@@ -44,12 +48,21 @@ public abstract class LogicEvaluator {
         return mTokenizer;
     }
 
+    /**
+     * calculate expression with current radix base
+     *
+     * @param expr     - input expression
+     * @param callback - call back when finished evaluate
+     */
     public void evaluateBase(CharSequence expr, EvaluateCallback callback) {
         evaluate(expr.toString(), callback);
     }
 
     public abstract BigEvaluator getEvaluator();
 
+    /**
+     * calculate expression with current radix base
+     */
     private void evaluate(String expr, EvaluateCallback callback) {
         expr = FormatExpression.cleanExpression(expr, mTokenizer);
         Log.d(TAG, "evaluate: " + expr);
@@ -65,6 +78,14 @@ public abstract class LogicEvaluator {
         }
     }
 
+    /**
+     * set radix base
+     *
+     * @param expr     - input expression with current radix
+     * @param base     - base to change
+     * @param callback - call back when finished evaluate, return result of
+     *                 expression with @param{base}
+     */
     public void setBase(String expr, Base base, EvaluateCallback callback) {
         try {
             String result;
@@ -84,9 +105,9 @@ public abstract class LogicEvaluator {
         return mEvaluator;
     }
 
-
-
-
+    /**
+     * interface for callback result
+     */
     public interface EvaluateCallback {
         void onEvaluate(String expr, String result, int errorResourceId);
     }
