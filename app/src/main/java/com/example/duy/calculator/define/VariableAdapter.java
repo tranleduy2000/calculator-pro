@@ -18,6 +18,9 @@ import com.example.duy.calculator.data.Database;
 import java.util.ArrayList;
 
 
+/**
+ * Adapter variabel for recycle view
+ */
 public class VariableAdapter extends RecyclerView.Adapter<VariableAdapter.ViewHolder> {
     private final String TAG = VariableAdapter.class.getSimpleName();
     private Context context;
@@ -32,6 +35,9 @@ public class VariableAdapter extends RecyclerView.Adapter<VariableAdapter.ViewHo
 //        this.entries = database.getAllVariable();
     }
 
+    /**
+     * @return list variables
+     */
     public ArrayList<VariableEntry> getEntries() {
         return entries;
     }
@@ -100,23 +106,38 @@ public class VariableAdapter extends RecyclerView.Adapter<VariableAdapter.ViewHo
         return entries.size();
     }
 
+    /**
+     * add variable item
+     *
+     * @param a
+     */
     public void addVar(VariableEntry a) {
         this.entries.add(a);
         Log.d(TAG, "addVar: " + a.getName());
         this.notifyItemInserted(getItemCount() - 1);
     }
 
+    /**
+     * remove item
+     * @param adapterPosition
+     */
     public void removeVar(int adapterPosition) {
         database.removeVariable(entries.get(adapterPosition).getName());
         entries.remove(adapterPosition);
         this.notifyItemRemoved(adapterPosition);
     }
 
+    /**
+     * add empty variable
+     */
     public void add() {
         entries.add(new VariableEntry("", ""));
         notifyItemInserted(getItemCount() - 1);
     }
 
+    /**
+     * view holder for adapter
+     */
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public EditText txtName;
         public EditText editValue;

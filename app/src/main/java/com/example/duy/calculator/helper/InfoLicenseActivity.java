@@ -11,6 +11,8 @@ import com.example.duy.calculator.AbstractAppCompatActivity;
 import com.example.duy.calculator.R;
 
 /**
+ * Open source license
+ * <p>
  * Created by DUy on 12-Dec-16.
  */
 

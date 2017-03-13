@@ -4,7 +4,6 @@ import android.animation.Animator;
 import android.animation.ObjectAnimator;
 import android.annotation.TargetApi;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -31,7 +30,7 @@ import android.widget.Toast;
 
 import com.example.duy.calculator.R;
 import com.example.duy.calculator.adapters.ResultAdapter;
-import com.example.duy.calculator.hand_write.HandWriteCallback;
+import com.example.duy.calculator.hand_write.CalcHandWriteCallback;
 import com.example.duy.calculator.hand_write.HandWriteManager;
 import com.example.duy.calculator.history.HistoryEntry;
 import com.example.duy.calculator.item_math_type.IExprInput;
@@ -112,7 +111,7 @@ public abstract class AbstractEvaluatorActivity extends AbstractNavDrawerActionB
     private MathWidget mMathWidget; //math widget
     private SlidingUpPanelLayout mSlidingUpPanel; //slide for scroll mathWidget
     private FloatingActionButton btnHelp; //
-    private HandWriteCallback mCallback; //hand write callback
+    private CalcHandWriteCallback mCallback; //hand write callback
     private ResultAdapter resultAdapter;
 
     @Override
@@ -391,7 +390,7 @@ public abstract class AbstractEvaluatorActivity extends AbstractNavDrawerActionB
         mSlidingUpPanel = (SlidingUpPanelLayout) findViewById(R.id.sliding_layout);
 
         mMathWidget = (MathWidget) mSlidingUpPanel.findViewById(R.id.hand_pad);
-        mCallback = new HandWriteCallback();
+        mCallback = new CalcHandWriteCallback();
 
         boolean success = HandWriteManager.initHandWrite(mMathWidget, this, mCallback, false);
         if (!success) {

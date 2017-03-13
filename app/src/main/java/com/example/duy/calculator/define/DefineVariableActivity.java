@@ -20,7 +20,7 @@ import java.util.ArrayList;
 
 
 /**
- * Definetion getValue() of list variable
+ * Definetion value of list variable
  * <p>
  * Created by DUy on 04-Dec-16.
  */

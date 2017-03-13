@@ -16,7 +16,7 @@ import com.myscript.atk.math.widget.MathWidgetApi;
 public class HandWriteManager {
     public static boolean initHandWrite(MathWidgetApi widget,
                                         Activity context,
-                                        HandWriteCallback mCallback,
+                                        CalcHandWriteCallback mCallback,
                                         boolean autoEval) {
         //    mContainerGesture = (LinearLayout) findViewById(R.id.container_gesture);
         boolean success = widget.registerCertificate(MyCertificate.getBytes());

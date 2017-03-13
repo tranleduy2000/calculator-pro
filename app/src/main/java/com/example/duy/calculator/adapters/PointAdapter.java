@@ -11,7 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.duy.calculator.R;
-import com.example.duy.calculator.item.Point;
 
 import java.util.ArrayList;
 

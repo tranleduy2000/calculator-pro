@@ -4,12 +4,14 @@ import com.myscript.atk.core.CaptureInfo;
 import com.myscript.atk.math.widget.MathWidgetApi;
 
 /**
+ * Handler event for handw rite view
  * Created by DUy on 04-Jan-17.
  */
 
-public class HandWriteCallback implements MathWidgetApi.OnSolvingListener,
+public class CalcHandWriteCallback implements MathWidgetApi.OnSolvingListener,
         MathWidgetApi.OnConfigureListener, MathWidgetApi.OnGestureListener,
-        MathWidgetApi.OnPenListener, MathWidgetApi.OnRecognitionListener, MathWidgetApi.OnUndoRedoListener {
+        MathWidgetApi.OnPenListener, MathWidgetApi.OnRecognitionListener,
+        MathWidgetApi.OnUndoRedoListener {
     @Override
     public void onUsingAngleUnitChanged(MathWidgetApi mathWidgetApi, boolean b) {
 

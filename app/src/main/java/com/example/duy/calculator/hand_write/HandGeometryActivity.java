@@ -29,6 +29,15 @@ import com.sothree.slidinguppanel.SlidingUpPanelLayout;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
+/**
+ * geometric hand writer
+ * <p>
+ * triangle
+ * rect
+ * circle
+ * square
+ * ....
+ */
 public class HandGeometryActivity extends AbstractAppCompatActivity implements GeometryWidgetApi.OnEditingListener {
 
     private static final String TAG = "GeometryActivity";
@@ -48,9 +57,7 @@ public class HandGeometryActivity extends AbstractAppCompatActivity implements G
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         setTitle(R.string.hand_geometry);
-
         mWidget = (GeometryWidgetApi) findViewById(R.id.geometry_widget);
-
         if (!mWidget.registerCertificate(MyCertificate.getBytes())) {
             AlertDialog.Builder dlgAlert = new AlertDialog.Builder(this);
             dlgAlert.setMessage("Please use a valid certificate.");
@@ -64,6 +71,38 @@ public class HandGeometryActivity extends AbstractAppCompatActivity implements G
             dlgAlert.create().show();
             return;
         }
+
+        setupHandWrite();
+        findViewById(R.id.fab_close).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+        mSilde = (SlidingUpPanelLayout) findViewById(R.id.sliding_layout);
+        mSilde.setFadeOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mSilde.setPanelState(SlidingUpPanelLayout.PanelState.COLLAPSED);
+                mWidget.undo(); //???
+            }
+        });
+        mEditText = (EditText) mSilde.findViewById(R.id.edit_value);
+        btnSave = (Button) mSilde.findViewById(R.id.btn_save);
+        txtInfo = (TextView) mSilde.findViewById(R.id.txt_info);
+        btnCancel = (Button) mSilde.findViewById(R.id.btn_cancel);
+        btnCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                doCancel();
+            }
+        });
+    }
+
+    /**
+     * config hand write view
+     */
+    private void setupHandWrite() {
 
         mWidget.addSearchDir("zip://" + getPackageCodePath() + "!/assets/conf/");
         mWidget.configure("shape", "standard");
@@ -104,31 +143,6 @@ public class HandGeometryActivity extends AbstractAppCompatActivity implements G
             }
         });
 
-        findViewById(R.id.fab_close).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
-
-        mSilde = (SlidingUpPanelLayout) findViewById(R.id.sliding_layout);
-        mSilde.setFadeOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mSilde.setPanelState(SlidingUpPanelLayout.PanelState.COLLAPSED);
-                mWidget.undo(); //???
-            }
-        });
-        mEditText = (EditText) mSilde.findViewById(R.id.edit_value);
-        btnSave = (Button) mSilde.findViewById(R.id.btn_save);
-        txtInfo = (TextView) mSilde.findViewById(R.id.txt_info);
-        btnCancel = (Button) mSilde.findViewById(R.id.btn_cancel);
-        btnCancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                doCancel();
-            }
-        });
     }
 
     private void doCancel() {

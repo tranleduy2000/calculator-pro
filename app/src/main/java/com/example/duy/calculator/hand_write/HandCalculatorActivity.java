@@ -46,7 +46,7 @@ public class HandCalculatorActivity extends AbstractAppCompatActivity {
 
         widget = (MathWidgetApi) findViewById(com.example.duy.calculator.R.id.math_widget);
         boolean success = HandWriteManager.initHandWrite(widget,
-                this, new HandWriteCallback(), true);
+                this, new CalcHandWriteCallback(), true);
         if (!success) {
             AlertDialog.Builder dlgAlert = new AlertDialog.Builder(this);
             dlgAlert.setMessage("Lỗi");
@@ -162,15 +162,15 @@ public class HandCalculatorActivity extends AbstractAppCompatActivity {
                 return true;
             case R.id.copy_as_text:
                 out = widget.getResultAsText();
-                myClipboard.setClipboard(this, out);
+                MyClipboard.setClipboard(this, out);
                 return true;
             case R.id.copy_as_latex:
                 out = widget.getResultAsLaTeX();
-                myClipboard.setClipboard(this, out);
+                MyClipboard.setClipboard(this, out);
                 return true;
             case R.id.copy_as_mathml:
                 out = widget.getResultAsMathML();
-                myClipboard.setClipboard(this, out);
+                MyClipboard.setClipboard(this, out);
                 return true;
             case R.id.info:
                 showDialogHelp();
@@ -180,6 +180,9 @@ public class HandCalculatorActivity extends AbstractAppCompatActivity {
         }
     }
 
+    /**
+     * show alert dialog "how to use"
+     */
     private void showDialogHelp() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage(R.string.hand_write_help)

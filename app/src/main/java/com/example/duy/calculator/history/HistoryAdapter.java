@@ -21,6 +21,9 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+/**
+ * Adapter history for recycle view
+ */
 public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHolder> {
     private ArrayList<HistoryEntry> itemHistories = new ArrayList<>();
     private Activity context;

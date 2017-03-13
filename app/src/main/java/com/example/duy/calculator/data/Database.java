@@ -14,10 +14,11 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
+ * SQ lite database for calc
+ * include history, variable, ...
  * Created by Duy on 3/7/2016
  */
 public class Database extends SQLiteOpenHelper implements Serializable {
-    static final long serialVersionUID = 2L;
     private static final String DATABASE_NAME = "history_manager";
     private static final int DATABASE_VERSION = 4;
     private static final String TABLE_HISTORY = "tbl_history";

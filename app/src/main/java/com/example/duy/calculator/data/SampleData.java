@@ -1,6 +1,7 @@
 package com.example.duy.calculator.data;
 
 /**
+ * Math sample for some functions
  * Created by DUy on 29-Jan-17.
  */
 

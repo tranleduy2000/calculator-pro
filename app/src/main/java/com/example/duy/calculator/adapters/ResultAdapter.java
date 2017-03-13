@@ -41,11 +41,21 @@ public class ResultAdapter extends RecyclerView.Adapter<ResultAdapter.ResultView
         this.mResults = mResults;
     }
 
+    /**
+     * add new result type
+     *
+     * @param item
+     */
     public void addItem(HistoryEntry item) {
         mResults.add(0, item);
         notifyItemInserted(0);
     }
 
+    /**
+     * remove result item
+     * @param position
+     * @return
+     */
     public boolean removeItem(int position) {
         if (position > mResults.size() - 1) {
             return false;
@@ -55,6 +65,11 @@ public class ResultAdapter extends RecyclerView.Adapter<ResultAdapter.ResultView
         return true;
     }
 
+    /**
+     * return list result item
+     * @param position
+     * @return
+     */
     public HistoryEntry getResult(int position) {
         if (position > mResults.size() - 1) {
             return new HistoryEntry("0", "0");
@@ -62,6 +77,9 @@ public class ResultAdapter extends RecyclerView.Adapter<ResultAdapter.ResultView
         return mResults.get(position);
     }
 
+    /**
+     * clear adapter
+     */
     public void clear() {
         int size = mResults.size();
         if (mResults.size() == 1) {
@@ -138,6 +156,9 @@ public class ResultAdapter extends RecyclerView.Adapter<ResultAdapter.ResultView
 
     }
 
+    /**
+     * result entry
+     */
     static class ResultViewHolder extends RecyclerView.ViewHolder {
         MathView txtMath;
         MathView txtResult;

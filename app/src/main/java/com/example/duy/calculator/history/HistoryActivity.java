@@ -23,6 +23,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
+ * History activity
+ *
  * Created by DUy on 29-Nov-16.
  */
 

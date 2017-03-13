@@ -10,7 +10,13 @@ import java.io.FileOutputStream;
 
 import static android.content.ContentValues.TAG;
 
-class PictUtil {
+/**
+ * picture util
+ */
+public class PictUtil {
+    /**
+     * @return path of application
+     */
     public static File getSavePath() {
         File path;
         if (hasSDCard()) { // SD card
@@ -22,11 +28,20 @@ class PictUtil {
         return path;
     }
 
+    /**
+     * @return cache path
+     */
     public static String getCacheFilename() {
         File f = getSavePath();
         return f.getAbsolutePath() + "/cache.png";
     }
 
+    /**
+     * load bitmap
+     *
+     * @param filename - path of file
+     * @return Bitmap
+     */
     public static Bitmap loadFromFile(String filename) {
         try {
             File f = new File(filename);
@@ -53,11 +68,21 @@ class PictUtil {
         return status.equals(Environment.MEDIA_MOUNTED);
     }
 
+    /**
+     * @return sd path
+     */
     public static String getSDCardPath() {
         File path = Environment.getExternalStorageDirectory();
         return path.getAbsolutePath();
     }
 
+    /**
+     * save file
+     *
+     * @param filename - name of file
+     * @param bmp      - bitmap file
+     * @return <code>true</code> if success, otherwise <code>false</code>
+     */
     public static boolean saveToFile(String filename, Bitmap bmp) {
         FileOutputStream out = null;
         try {
