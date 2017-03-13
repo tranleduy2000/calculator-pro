@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.example.duy.calculator.ICalculator;
 import com.example.duy.calculator.R;
 import com.example.duy.calculator.math_eval.BigEvaluator;
+import com.example.duy.calculator.math_eval.DecimalFactory;
 import com.example.duy.calculator.math_eval.Tokenizer;
 import com.example.duy.calculator.utils.ConfigApp;
 import com.example.duy.calculator.voice.MathVoiceManager;
@@ -150,8 +151,8 @@ public abstract class AbstractCalculatorActivity extends AbstractNavDrawerAction
     public void onSpeechResult(String result) {
         setTextDisplay(result);
         if (!BigEvaluator.getInstance(this).isSyntaxError(result)) {
-            String res = BigEvaluator.getInstance(this).evaluateWithResultNormal(result);
-            MathVoiceManager.Say("Câu trả lời là: " + res);
+            String res = processResult(result);
+            MathVoiceManager.Say(res);
         }
         if (speechProgress != null)
             speechProgress.post(new Runnable() {
@@ -160,6 +161,26 @@ public abstract class AbstractCalculatorActivity extends AbstractNavDrawerAction
                     speechProgress.setVisibility(View.GONE);
                 }
             });
+    }
+
+    /**
+     * convert result for "speech"
+     *
+     * @param result
+     * @return
+     */
+    private String processResult(String result) {
+        String res = BigEvaluator.getInstance(this).evaluateWithResultNormal(result);
+        try {
+            if (BigEvaluator.getInstance(this).isNumber(res)) {
+                Log.i(TAG, "processResult: " + DecimalFactory.round(res, 3));
+                return "Câu trả lời là " + DecimalFactory.round(res, 3);
+            } else {
+                return "Câu trả lời là: " + res;
+            }
+        } catch (Exception e) {
+            return "Câu trả lời là: " + res;
+        }
     }
 
     @Override
