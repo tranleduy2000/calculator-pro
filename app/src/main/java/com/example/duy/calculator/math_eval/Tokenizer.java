@@ -23,6 +23,11 @@ public class Tokenizer {
         mReplacements = new ArrayList<>();
     }
 
+    /**
+     * init list key word
+     *
+     * @param context
+     */
     private void generateReplacements(Context context) {
         mReplacements.clear();
         mReplacements.add(new Localize("/", context.getString(R.string.div)));

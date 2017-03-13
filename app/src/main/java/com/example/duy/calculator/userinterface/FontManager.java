@@ -20,12 +20,11 @@ public final class FontManager {
      */
     private static Typeface typeface = null;
 
-    public static Typeface loadTypefaceFromAsset(Context context) {
+    public static Typeface getInstance(Context context) {
         if (typeface != null) return typeface;
         String path = "fonts/";
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
-        String font = sharedPreferences.getString(context.getString(R.string.key_pref_font),
-                context.getString(R.string.font_light));
+        String font = sharedPreferences.getString(context.getString(R.string.key_pref_font), context.getString(R.string.font_light));
         if (font.equals(context.getString(R.string.font_black))) {
             path = path + "Roboto-Black.ttf";
         } else if (font.equals(context.getString(R.string.font_light))) {
@@ -42,6 +41,10 @@ public final class FontManager {
         return typeface;
     }
 
+    /**
+     * @param context - Android context
+     * @return current name of font setting
+     */
     public String getFont(Context context) {
         String path = "fonts/";
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
@@ -61,6 +64,10 @@ public final class FontManager {
         return path + "Roboto-Light.ttf";
     }
 
+    /**
+     * @param context - Android context
+     * @return font of setting.
+     */
     public Typeface getTypeFace(Context context) {
         String path = "fonts/";
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);

@@ -6,6 +6,8 @@ import android.content.res.Resources;
 import com.example.duy.calculator.R;
 
 /**
+ * Theme manager
+ * <p>
  * Created by Duy on 3/7/2016
  */
 public class ThemeEngine {

@@ -3,7 +3,7 @@ package com.example.duy.calculator.view;
 import android.content.Context;
 import android.util.AttributeSet;
 
-import static com.example.duy.calculator.userinterface.FontManager.loadTypefaceFromAsset;
+import static com.example.duy.calculator.userinterface.FontManager.getInstance;
 
 /**
  * Base Edit Text
@@ -29,6 +29,6 @@ public class BaseEditText extends AutoCompleteFunctionEditText {
 
     private void setup(Context context) {
         if (!isInEditMode())
-            setTypeface(loadTypefaceFromAsset(context));
+            setTypeface(getInstance(context));
     }
 }

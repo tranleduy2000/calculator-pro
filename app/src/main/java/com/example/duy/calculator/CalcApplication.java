@@ -11,7 +11,7 @@ public class CalcApplication extends MultiDexApplication {
     public void onCreate() {
         super.onCreate();
         //init font from asset file
-        FontManager.loadTypefaceFromAsset(this);
+        FontManager.getInstance(this);
 
         MathVoiceManager.initVoice(this, getPackageName());
     }
