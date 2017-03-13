@@ -30,10 +30,10 @@ import rx.functions.Action1;
  */
 public abstract class AbstractCalculatorActivity extends AbstractNavDrawerActionBarActivity implements
         SharedPreferences.OnSharedPreferenceChangeListener, ICalculator, MathVoiceManager.MathVoiceCallback {
+    public Tokenizer mTokenizer;
     protected SpeechProgressView speechProgress;
     private boolean debug = ConfigApp.DEBUG;
     private MathVoiceManager mathVoiceManager;
-    public Tokenizer mTokenizer;
 
     /**
      * insert text to display - not clear screen
@@ -110,6 +110,9 @@ public abstract class AbstractCalculatorActivity extends AbstractNavDrawerAction
         speechProgress.setColors(colors);
     }
 
+    /**
+     * check permission android record audio
+     */
     protected void startVoiceInput() {
         if (MathVoiceManager.isRunning()) {
             MathVoiceManager.stop();
@@ -130,6 +133,9 @@ public abstract class AbstractCalculatorActivity extends AbstractNavDrawerAction
         }
     }
 
+    /**
+     * start google voice
+     */
     private void onRecordAudioPermissionGranted() {
         speechProgress = (SpeechProgressView) findViewById(R.id.speech_progress);
         if (speechProgress == null) {
@@ -144,7 +150,8 @@ public abstract class AbstractCalculatorActivity extends AbstractNavDrawerAction
     public void onSpeechResult(String result) {
         setTextDisplay(result);
         if (!BigEvaluator.getInstance(this).isSyntaxError(result)) {
-            MathVoiceManager.Say(result);
+            String res = BigEvaluator.getInstance(this).evaluateWithResultNormal(result);
+            MathVoiceManager.Say("Câu trả lời là: " + res);
         }
         if (speechProgress != null)
             speechProgress.post(new Runnable() {

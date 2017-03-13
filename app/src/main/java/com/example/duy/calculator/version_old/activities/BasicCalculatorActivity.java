@@ -922,25 +922,13 @@ public class BasicCalculatorActivity extends AbstractCalculatorActivity
         switch (requestCode) {
             case REQ_CODE_SPEECH_INPUT:
                 if (resultCode == RESULT_OK && null != data) {
-                    ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-                    Toast.makeText(this, result.get(0), Toast.LENGTH_SHORT).show();
-                    String res = result.get(0);
-                    res = VoiceUtils.replace(res);
-                    final String finalRes = res;
-                    mInputDisplay.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            mInputDisplay.setText(finalRes);
-                        }
-                    });
+                    processOutputVoice(data);
                 }
                 break;
-
             case OcrManager.OCR_REQUEST_CODE:
                 OcrManager ocrManager = new OcrManager();
                 ocrManager.processResult(BasicCalculatorActivity.this, resultCode, data);
                 break;
-
             case REQ_CODE_HISTORY:
                 Log.d(TAG, "onActivityResult: history");
                 if (resultCode == RESULT_OK) {
@@ -960,6 +948,25 @@ public class BasicCalculatorActivity extends AbstractCalculatorActivity
                 //onEqual();
                 break;
         }
+    }
+
+    /**
+     * out put result text
+     *
+     * @param data
+     */
+    private void processOutputVoice(Intent data) {
+        ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+        Toast.makeText(this, result.get(0), Toast.LENGTH_SHORT).show();
+        String res = result.get(0);
+        res = VoiceUtils.replace(res);
+        final String finalRes = res;
+        mInputDisplay.post(new Runnable() {
+            @Override
+            public void run() {
+                mInputDisplay.setText(finalRes);
+            }
+        });
     }
 
     private void clickDerivative() {

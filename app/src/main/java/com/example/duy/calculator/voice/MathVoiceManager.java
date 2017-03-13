@@ -98,7 +98,6 @@ public class MathVoiceManager implements SpeechDelegate {
     public void onSpeechResult(String result) {
         if (callback != null) {
             callback.onSpeechResult(VoiceUtils.replace(result));
-
         }
     }
 

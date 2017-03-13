@@ -42,6 +42,8 @@ public class OcrManager {
         ocrEngineOptions.setImageProcessingEnabled(true);
         ocrEngineOptions
                 .addAllDigitsToWhitelist(OcrFont.OCR_FONT_ANY)
+                .addUppercaseCharsToWhitelist(OcrFont.OCR_FONT_ANY)
+                .addLowercaseCharsToWhitelist(OcrFont.OCR_FONT_ANY)
                 .addCharToWhitelist('0', OcrFont.OCR_FONT_ANY)
                 .addCharToWhitelist('+', OcrFont.OCR_FONT_ANY)
                 .addCharToWhitelist('-', OcrFont.OCR_FONT_ANY)
@@ -53,14 +55,6 @@ public class OcrManager {
                 .addCharToWhitelist('(', OcrFont.OCR_FONT_ANY)
                 .addCharToWhitelist(')', OcrFont.OCR_FONT_ANY)
                 //sin, cos, tan
-//                .addCharToWhitelist('e', OcrFont.OCR_FONT_ANY)
-//                .addCharToWhitelist('c', OcrFont.OCR_FONT_ANY)
-//                .addCharToWhitelist('o', OcrFont.OCR_FONT_ANY)
-//                .addCharToWhitelist('s', OcrFont.OCR_FONT_ANY)
-//                .addCharToWhitelist('i', OcrFont.OCR_FONT_ANY)
-//                .addCharToWhitelist('n', OcrFont.OCR_FONT_ANY)
-//                .addCharToWhitelist('t', OcrFont.OCR_FONT_ANY)
-//                .addCharToWhitelist('a', OcrFont.OCR_FONT_ANY)
                 .addCharToWhitelist('%', OcrFont.OCR_FONT_ANY)
                 .addCharToWhitelist('=', OcrFont.OCR_FONT_ANY);
         parserSettings.setOcrEngineOptions(ocrEngineOptions);
