@@ -7,6 +7,7 @@ import com.example.duy.calculator.math_eval.BigEvaluator;
 import java.io.Serializable;
 
 /**
+ * Abstract class for Item Input Math
  * Created by DUy on 29-Dec-16.
  */
 

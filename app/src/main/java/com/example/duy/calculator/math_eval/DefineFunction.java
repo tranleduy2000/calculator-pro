@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
+ * Define function
+ *
  * Created by DUy on 21-Jan-17.
  */
 
@@ -15,6 +17,10 @@ public class DefineFunction {
         this.mEvaluator = e;
     }
 
+    /**
+     * @param var   - name of variable
+     * @param value - init value of variable
+     */
     public void define(String var, double value) {
         try {
             mEvaluator.getEvalUtilities().defineVariable(var, value);
@@ -22,7 +28,11 @@ public class DefineFunction {
             e.printStackTrace();
         }
     }
-
+    /**
+     *
+     * @param var - name of variable
+     * @param value - init value of variable
+     */
     public void define(String var, String value) {
         try {
             Double res = Double.valueOf(

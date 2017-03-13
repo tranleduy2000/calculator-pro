@@ -6,6 +6,10 @@ import java.text.DecimalFormatSymbols;
 import java.util.Locale;
 
 /**
+ * Decimal factory
+ * <p>
+ * Round number
+ * <p>
  * Created by DUy on 21-Jan-17.
  */
 

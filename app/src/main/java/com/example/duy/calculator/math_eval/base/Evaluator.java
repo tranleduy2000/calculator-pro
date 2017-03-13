@@ -9,7 +9,7 @@ import org.javia.arity.Symbols;
 import org.javia.arity.SyntaxException;
 
 /**
- * thực hiện việc tính toán các biểu thức
+ * Calculate some basic expression
  * <p/>
  * Create by duy on 30/7/2016
  */

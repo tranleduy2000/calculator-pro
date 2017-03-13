@@ -3,7 +3,9 @@ package com.example.duy.calculator.math_eval;
 import java.util.regex.Pattern;
 
 /**
- * Created by Will on 11/8/2014.
+ * Some constants
+ * {@link Pattern} number matching
+ * Created by Will on 11/8/2015.
  */
 public class Constants {
     public static final char INFINITY_UNICODE = '\u221e';

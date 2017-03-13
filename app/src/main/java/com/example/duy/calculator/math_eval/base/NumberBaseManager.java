@@ -12,7 +12,8 @@ import java.util.Set;
 
 
 /**
- * Keeps track of the application wide number base, and manages the IDs of views to disable
+ * Keeps track of the application wide number base,
+ * and manages the IDs of views to disable
  * when changing base.
  */
 public class NumberBaseManager {
