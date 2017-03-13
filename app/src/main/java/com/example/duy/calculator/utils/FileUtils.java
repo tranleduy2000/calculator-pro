@@ -7,6 +7,7 @@ import android.widget.Toast;
 import java.io.FileOutputStream;
 
 /**
+ * File manager
  * Created by DUy on 04-Nov-16.
  */
 
@@ -17,6 +18,26 @@ public class FileUtils {
         this.context = context;
     }
 
+    /* Checks if external storage is available for read and write */
+    public static boolean isExternalStorageWritable() {
+        String state = Environment.getExternalStorageState();
+        return Environment.MEDIA_MOUNTED.equals(state);
+    }
+
+    /* Checks if external storage is available to at least read */
+    public static boolean isExternalStorageReadable() {
+        String state = Environment.getExternalStorageState();
+        return Environment.MEDIA_MOUNTED.equals(state) ||
+                Environment.MEDIA_MOUNTED_READ_ONLY.equals(state);
+    }
+
+    /**
+     * save file
+     *
+     * @param fileName - name of file
+     * @param data     - string content
+     * @return - <code>true</code> if success, otherwise <code>false</code>
+     */
     public boolean save(String fileName, String data) {
         FileOutputStream outputStream;
         try {
@@ -27,25 +48,6 @@ public class FileUtils {
             return true;
         } catch (Exception e) {
             e.printStackTrace();
-        }
-        return false;
-    }
-
-    /* Checks if external storage is available for read and write */
-    public static boolean isExternalStorageWritable() {
-        String state = Environment.getExternalStorageState();
-        if (Environment.MEDIA_MOUNTED.equals(state)) {
-            return true;
-        }
-        return false;
-    }
-
-    /* Checks if external storage is available to at least read */
-    public static boolean isExternalStorageReadable() {
-        String state = Environment.getExternalStorageState();
-        if (Environment.MEDIA_MOUNTED.equals(state) ||
-                Environment.MEDIA_MOUNTED_READ_ONLY.equals(state)) {
-            return true;
         }
         return false;
     }

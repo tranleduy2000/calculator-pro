@@ -12,8 +12,8 @@ import android.view.View;
 
 import com.example.duy.calculator.AbstractAppCompatActivity;
 import com.example.duy.calculator.R;
+import com.example.duy.calculator.utils.ClipboardManager;
 import com.example.duy.calculator.utils.FileUtils;
-import com.example.duy.calculator.utils.MyClipboard;
 import com.example.duy.calculator.version_old.activities.BasicCalculatorActivity;
 import com.myscript.atk.core.CaptureInfo;
 import com.myscript.atk.math.widget.MathWidgetApi;
@@ -133,7 +133,7 @@ public class HandCalculatorActivity extends AbstractAppCompatActivity {
         String out;
         String filename;
         FileUtils fileUtils = new FileUtils(this);
-        MyClipboard myClipboard = new MyClipboard();
+        ClipboardManager myClipboard = new ClipboardManager();
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.clear:
@@ -162,15 +162,15 @@ public class HandCalculatorActivity extends AbstractAppCompatActivity {
                 return true;
             case R.id.copy_as_text:
                 out = widget.getResultAsText();
-                MyClipboard.setClipboard(this, out);
+                ClipboardManager.setClipboard(this, out);
                 return true;
             case R.id.copy_as_latex:
                 out = widget.getResultAsLaTeX();
-                MyClipboard.setClipboard(this, out);
+                ClipboardManager.setClipboard(this, out);
                 return true;
             case R.id.copy_as_mathml:
                 out = widget.getResultAsMathML();
-                MyClipboard.setClipboard(this, out);
+                ClipboardManager.setClipboard(this, out);
                 return true;
             case R.id.info:
                 showDialogHelp();

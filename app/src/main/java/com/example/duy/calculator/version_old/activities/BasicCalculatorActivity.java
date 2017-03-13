@@ -51,7 +51,7 @@ import com.example.duy.calculator.math_eval.BigEvaluator;
 import com.example.duy.calculator.math_eval.LogicEvaluator;
 import com.example.duy.calculator.math_eval.base.Evaluator;
 import com.example.duy.calculator.ocr.OcrManager;
-import com.example.duy.calculator.utils.MyClipboard;
+import com.example.duy.calculator.utils.ClipboardManager;
 import com.example.duy.calculator.utils.VoiceUtils;
 import com.example.duy.calculator.version_old.activities.abstract_class.AbstractCalculatorActivity;
 import com.example.duy.calculator.view.AnimationFinishedListener;
@@ -606,11 +606,11 @@ public class BasicCalculatorActivity extends AbstractCalculatorActivity
     }
 
     public void copyText() {
-        MyClipboard.setClipboard(this, mInputDisplay.getCleanText());
+        ClipboardManager.setClipboard(this, mInputDisplay.getCleanText());
     }
 
     public void pasteText() {
-        mInputDisplay.setText(MyClipboard.getClipboard(this));
+        mInputDisplay.setText(ClipboardManager.getClipboard(this));
     }
 
     public void shareText() {
@@ -976,10 +976,10 @@ public class BasicCalculatorActivity extends AbstractCalculatorActivity
 
     public enum CalculatorState {
         INPUT,
-        EVALUATE, RESULT, ERROR;
+        EVALUATE, RESULT, ERROR
     }
 
-    public static enum PagerState {PAGE_SCIENCE, PAGE_NUMBER, PAGE_HISTORY, PAGE_CONSTANT}
+    public enum PagerState {PAGE_SCIENCE, PAGE_NUMBER, PAGE_HISTORY, PAGE_CONSTANT}
 
     private class TaskSolve extends AsyncTask<IExprInput, Void, String> {
         @Override

@@ -6,9 +6,10 @@ import android.widget.Toast;
 import com.example.duy.calculator.R;
 
 /**
+ * uses {@link ClipboardManager} instead of this class
  * Created by DUy on 04-Nov-16.
  */
-
+@Deprecated
 public class MyClipboard {
     // copy text to clipboard
     public static void setClipboard(Context context, String text) {

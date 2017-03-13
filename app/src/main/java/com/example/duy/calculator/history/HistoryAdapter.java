@@ -14,7 +14,7 @@ import com.example.duy.calculator.DLog;
 import com.example.duy.calculator.R;
 import com.example.duy.calculator.data.Database;
 import com.example.duy.calculator.math_eval.Tokenizer;
-import com.example.duy.calculator.utils.MyClipboard;
+import com.example.duy.calculator.utils.ClipboardManager;
 
 import java.util.ArrayList;
 
@@ -118,7 +118,7 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHold
         holder.imgCopy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MyClipboard.setClipboard(context, historyEntry.getMath());
+                ClipboardManager.setClipboard(context, historyEntry.getMath());
             }
         });
         holder.imgShare.setOnClickListener(new View.OnClickListener() {

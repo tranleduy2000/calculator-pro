@@ -35,6 +35,8 @@ public class VoiceUtils {
         mReplace.add(new ItemReplace("mũ", "^"));
         mReplace.add(new ItemReplace("mủ", "^"));
         mReplace.add(new ItemReplace("giai thừa", "!"));
+        mReplace.add(new ItemReplace("mở ngoặc", "("));
+        mReplace.add(new ItemReplace("đóng ngoặc", ")"));
     }
 
     public static String replace(String res) {
