@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
 /**
- * Setting for calcualtor
+ * Setting for calculator
  * <p>
  * Include precision of calculate. Font, theme, style. Dev mode, trace mode.
  */
