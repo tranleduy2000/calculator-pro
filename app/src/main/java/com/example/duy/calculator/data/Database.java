@@ -41,6 +41,7 @@ public class Database extends SQLiteOpenHelper implements Serializable {
     private static final String KEY_VAR_NAME = "name";
     private static final String KEY_VAR_VALUE = "value";
 
+
     public static final String CREATE_TABLE_VARIABLE =
             "CREATE TABLE " + TABLE_VARIABLE +
                     "(" + KEY_VAR_NAME + " TEXT PRIMARY KEY, " + KEY_VAR_VALUE + " TEXT" + ")";
