@@ -606,5 +606,6 @@
     <string name="new_version_update">New version for app, do you want to update now!</string>
     <string name="dismiss">Dismiss</string>
     <string name="notify_update">Update notifications</string>
+    <string name="action_settings">Setting</string>
 
 </resources>

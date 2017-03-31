@@ -9,6 +9,7 @@ import net.gotev.speech.SpeechDelegate;
 import net.gotev.speech.SpeechRecognitionNotAvailable;
 import net.gotev.speech.ui.SpeechProgressView;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
@@ -17,7 +18,18 @@ import java.util.Locale;
  */
 
 public class MathVoiceManager implements SpeechDelegate {
+    private Context context;
     private MathVoiceCallback callback = null;
+    private VoiceUtils mVoiceUtils;
+
+    public MathVoiceManager(Context context) {
+        this.context = context;
+        try {
+            mVoiceUtils = new VoiceUtils(context.getAssets().open("voice/vietnam.xml"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     /**
      * setup voice
@@ -89,7 +101,7 @@ public class MathVoiceManager implements SpeechDelegate {
         if (callback == null) return;
         String finalResult = "";
         for (String partial : results) {
-            finalResult += VoiceUtils.replace(partial) + " ";
+            finalResult += (mVoiceUtils != null) ? mVoiceUtils.replace(partial) : partial;
         }
         callback.onSpeechPartialResults(results, finalResult);
     }
@@ -97,7 +109,11 @@ public class MathVoiceManager implements SpeechDelegate {
     @Override
     public void onSpeechResult(String result) {
         if (callback != null) {
-            callback.onSpeechResult(VoiceUtils.replace(result));
+            if (mVoiceUtils == null) {
+                callback.onSpeechResult(result);
+                return;
+            }
+            callback.onSpeechResult(mVoiceUtils.replace(result));
         }
     }
 

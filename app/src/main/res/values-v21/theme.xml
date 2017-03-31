@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="colorResultError">#ff4081</item>
+        <item name="colorClearScreen">#FF536DFE</item>
+        <item name="textFunctionHintStyle">@style/AppTheme.TextFunctionHint</item>
+        <item name="buttonDigitStyle">@style/AppTheme.BaseButton</item>
+        <item name="buttonEqualStyle">@style/AppTheme.ButtonEqualStyle</item>
+        <item name="buttonDeleteStyle">@style/AppTheme.ButtonDeleteStyle</item>
+        <item name="buttonOptStyle">@style/AppTheme.BaseButton</item>
+        <item name="buttonClearStyle">@style/AppTheme.ButtonClearStyle</item>
+        <item name="buttonSmallDigitStyle">@style/AppTheme.ButtonDigitStyle.Small</item>
+        <item name="textEquationStyle">@style/AppTheme.TextEquationStyle</item>
+        <item name="graphPanelStyle">@style/AppTheme.GraphPanelStyle</item>
+        <item name="backgroundDeleteButton">@drawable/ic_backspace_white_24dp</item>
+        <item name="buttonAdvanceStyle">@style/AppTheme.ButtonAdvanceStyle</item>
+        <item name="imageButtonStyle">@style/AppTheme.ImageButtonStyle</item>
+        <item name="background_pad_numeric">@color/blue_grey_800</item>
+        <item name="text_pad_basic_color">@color/white</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light">
+        <item name="textFunctionHintStyle">@style/AppTheme.TextFunctionHint</item>
+        <item name="colorResultError">@color/pink_accent_200</item>
+        <item name="colorClearScreen">@color/indigo_accent_200</item>
+        <item name="buttonDigitStyle">@style/AppTheme.BaseButton</item>
+        <item name="buttonEqualStyle">@style/AppTheme.ButtonEqualStyle</item>
+        <item name="buttonDeleteStyle">@style/AppTheme.ButtonDeleteStyle</item>
+        <item name="buttonOptStyle">@style/AppTheme.BaseButton</item>
+        <item name="buttonClearStyle">@style/AppTheme.ButtonClearStyle</item>
+        <item name="buttonSmallDigitStyle">@style/AppTheme.ButtonDigitStyle.Small</item>
+        <item name="textEquationStyle">@style/AppTheme.TextEquationStyle</item>
+        <item name="graphPanelStyle">@style/AppTheme.GraphPanelStyle</item>
+        <item name="backgroundDeleteButton">@drawable/ic_backspace_black_24dp</item>
+        <item name="buttonAdvanceStyle">@style/AppTheme.ButtonAdvanceStyle</item>
+        <item name="imageButtonStyle">@style/AppTheme.ImageButtonStyle</item>
+        <item name="background_pad_numeric">@color/blue_grey_800</item>
+        <item name="text_pad_basic_color">@color/white</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+</resources>

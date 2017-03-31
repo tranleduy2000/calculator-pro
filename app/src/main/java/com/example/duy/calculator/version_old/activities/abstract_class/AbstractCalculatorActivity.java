@@ -34,7 +34,7 @@ public abstract class AbstractCalculatorActivity extends AbstractNavDrawerAction
     public Tokenizer mTokenizer;
     protected SpeechProgressView speechProgress;
     private boolean debug = ConfigApp.DEBUG;
-    private MathVoiceManager mathVoiceManager;
+    private MathVoiceManager mMathVoiceManager;
 
     /**
      * insert text to display - not clear screen
@@ -68,8 +68,8 @@ public abstract class AbstractCalculatorActivity extends AbstractNavDrawerAction
         //define variable
         mTokenizer = new Tokenizer(this);
 
-        mathVoiceManager = new MathVoiceManager();
-        mathVoiceManager.setCallback(this);
+        mMathVoiceManager = new MathVoiceManager(this);
+        mMathVoiceManager.setCallback(this);
     }
 
     /**
@@ -144,7 +144,7 @@ public abstract class AbstractCalculatorActivity extends AbstractNavDrawerAction
             return;
         }
         speechProgress.setVisibility(View.VISIBLE);
-        mathVoiceManager.startInput(speechProgress);
+        mMathVoiceManager.startInput(speechProgress);
     }
 
     @Override

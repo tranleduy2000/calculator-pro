@@ -750,7 +750,6 @@ public class BasicCalculatorActivity extends AbstractCalculatorActivity
             Log.d(TAG, "onClick: " + ((TextView) view).getText().toString());
         }
         switch (id) {
-
             case R.id.img_camera:
                 OcrManager ocrManager = new OcrManager();
                 ocrManager.startOcr(this);
