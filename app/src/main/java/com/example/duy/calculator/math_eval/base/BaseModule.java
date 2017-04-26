@@ -7,6 +7,7 @@ import com.example.duy.calculator.math_eval.Constants;
 import org.javia.arity.SyntaxException;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Locale;
 import java.util.regex.Pattern;
 
@@ -71,7 +72,7 @@ public class BaseModule extends Module {
         String[] numbers = originalText.split(REGEX_NOT_NUMBER);
         String[] translatedNumbers = new String[numbers.length];
 
-        Log.d(TAG, "changeBase: operation " + operations.toString() + "; numbers " + numbers.toString());
+        Log.d(TAG, "changeBase: operation " + Arrays.toString(operations) + "; numbers " + Arrays.toString(numbers));
 
         for (int i = 0; i < numbers.length; i++) {
             if (!numbers[i].isEmpty()) {

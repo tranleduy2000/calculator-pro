@@ -33,11 +33,7 @@
     <string name="yes">Yes</string>
     <string name="vector">vector</string>
     <string name="title_activity_app_about">About NCalc+</string>
-    <string name="title_activity_geometry">2D Cartesian geometry</string>
     <string name="title_activity_graph">Graph</string>
-    <string name="title_activity_matrix_calculator">Matrix</string>
-    <string name="title_activity_settings">Setting</string>
-    <string name="title_activity_unit_converter_acitvity">Unit Converter</string>
     <string name="th_m_ph_ng_tr_nh">More</string>
     <string name="table">Statistical</string>
     <string name="t_ng">sum</string>
@@ -75,7 +71,6 @@
     <string name="nh_p_d_li_u">Insert information …</string>
     <string name="not_line">Not a straight line</string>
     <string name="not_interaction">No intersections</string>
-    <string name="not_input">Empty data</string>
     <string name="not_in_circle">None of the circle</string>
     <string name="nh_p_c_c_ph_ng_tr_nh_t_o_th_nh_h_ph">
         Enter equations forming a system of equations, then enter the equation system hidden \n
@@ -486,7 +481,6 @@
 
     <string name="enter_value">Enter value</string>
     <string name="name">Name</string>
-    <string name="define_var">Define Variable</string>
     <string name="cannot_factor">Can not prime factor</string>
     <string name="graph_2">Graph</string>
     <string name="enter_limit">Enter limit</string>
@@ -566,17 +560,10 @@
     <string name="enter_var_hint">Enter variable of system equation</string>
     <string name="input_matrix">Input matrix</string>
     <string name="input_equation_">Input equation</string>
-    <string name="my_own_title">Rate this app</string>
-    <string name="my_own_message">If you enjoy using this app, would you mind taking a moment to rate it? It will not take more than a minute. Thank for your support!</string>
-    <string name="my_own_rate">Rate now</string>
-    <string name="my_own_thanks">No, thanks</string>
-    <string name="my_own_cancel">Later</string>
-    <string name="plese_enter_function">Please input function!</string>
     <string name="precision_">Precision</string>
     <string name="calculator">Calculator</string>
     <string name="ui">User interface</string>
     <string name="advance">Advance</string>
-    <string name="exit_app">Do you want to exit the application?</string>
     <string name="fraction_mode">Fraction mode</string>
     <string name="fraction_decs">Show 1/2 instead of 0.5</string>
     <string name="summary_instant_res">Automatically calculate results</string>
@@ -586,15 +573,10 @@
     <string name="change_lang_msg">Restart app to apply language!</string>
     <string name="hand_geome">Hand Geometric</string>
 
-    <string name="trig_expand_desc">Expands out trigonometric expressions.</string>
-    <string name="trig_reduce_desc">Rewrites products and powers of trigonometric functions in terms of trigonometric functions with combined arguments.</string>
-    <string name="trig_to_exp_desc">Converts trigonometric functions to exponential.</string>
     <string name="tit_trig_expand">Trigonometry Expand</string>
     <string name="tit_trig_reduce">Trigonometry Reduce</string>
     <string name="tit_trig_to_exp">Trigonometry to Exponent</string>
     <string name="trigonometry">Trigonometry</string>
-    <string name="latex_summary">KaTeX is faster than MathJax on mobile environment, but MathJax supports more features and is much more beautiful.</string>
-    <string name="close_drawer">Close drawer</string>
     <string name="cannot_factor_polynomial">Can not factors the polynomial expression.</string>
     <string name="catalan_number">Catalan Number</string>
     <string name="prime">Prime Number</string>
@@ -603,10 +585,6 @@
     <string name="catalan_desc">Computes the nth Catalan number</string>
     <string name="fibo_desc">Computes the nth Fibonacci number.</string>
     <string name="prime_desc">Computes the nth Prime number.</string>
-    <string name="new_version_update">New version for app, do you want to update now!</string>
-    <string name="dismiss">Dismiss</string>
-    <string name="notify_update">Update notifications</string>
-    <string name="action_settings">Setting</string>
 
 
 </resources>

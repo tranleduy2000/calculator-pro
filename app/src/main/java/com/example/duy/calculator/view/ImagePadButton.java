@@ -2,12 +2,11 @@ package com.example.duy.calculator.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.ImageView;
 
 /**
  * Created by Duy on 3/7/2016
  */
-public class ImagePadButton extends ImageView {
+public class ImagePadButton extends android.support.v7.widget.AppCompatImageView {
     Context activity;
 
 

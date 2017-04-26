@@ -272,8 +272,8 @@ public class Ray2D extends AbstractLine2D {
 
     @Override
     public String toString() {
-        return new String("Ray2D(" + x0 + "," + y0 + "," +
-                dx + "," + dy + ")");
+        return "Ray2D(" + x0 + "," + y0 + "," +
+                dx + "," + dy + ")";
     }
 
     @Override

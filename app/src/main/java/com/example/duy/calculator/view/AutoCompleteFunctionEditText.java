@@ -6,7 +6,6 @@ import android.text.Spanned;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.widget.ArrayAdapter;
-import android.widget.MultiAutoCompleteTextView;
 
 import com.example.duy.calculator.utils.VariableUtil;
 
@@ -15,7 +14,7 @@ import java.util.ArrayList;
 /**
  * Created by Duy on 19/7/2016
  */
-public class AutoCompleteFunctionEditText extends MultiAutoCompleteTextView {
+public class AutoCompleteFunctionEditText extends android.support.v7.widget.AppCompatMultiAutoCompleteTextView {
 
     public AutoCompleteFunctionEditText(Context context) {
         super(context);

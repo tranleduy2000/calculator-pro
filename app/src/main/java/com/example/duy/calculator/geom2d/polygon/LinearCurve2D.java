@@ -13,6 +13,7 @@ import com.example.duy.calculator.geom2d.line.LinearShape2D;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
 
 /**
@@ -47,8 +48,7 @@ public abstract class LinearCurve2D implements ContinuousCurve2D {
 
     public LinearCurve2D(Point2D... vertices) {
         this.vertices = new ArrayList<Point2D>(vertices.length);
-        for (Point2D vertex : vertices)
-            this.vertices.add(vertex);
+        Collections.addAll(this.vertices, vertices);
     }
 
     public LinearCurve2D(Collection<? extends Point2D> vertices) {

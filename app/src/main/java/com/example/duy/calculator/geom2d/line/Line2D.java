@@ -27,9 +27,6 @@ package com.example.duy.calculator.geom2d.line;
 
 import android.graphics.Path;
 
-import com.example.duy.calculator.geom2d.FragmentCircle;
-import com.example.duy.calculator.geom2d.FragmentEllipse;
-import com.example.duy.calculator.geom2d.FragmentPolygon;
 import com.example.duy.calculator.geom2d.GeometricObject2D;
 import com.example.duy.calculator.geom2d.Point2D;
 import com.example.duy.calculator.geom2d.Vector2D;
@@ -75,7 +72,7 @@ public class Line2D extends AbstractSmoothCurve2D
         this(line.getPoint1(), line.getPoint2());
     }
 
-    public Line2D(com.example.duy.calculator.geom2d.line.StraightLine2D mLine) {
+    public Line2D(StraightLine2D mLine) {
         this(mLine.x0, mLine.y0, mLine.dx, mLine.dx);
     }
 
@@ -118,10 +115,9 @@ public class Line2D extends AbstractSmoothCurve2D
     }
 
     /**
-     * phương trình tham số
+     * Parametric equation
      *
      * @param line2D - obj line
-     * @return phương trình tham số
      */
     public static String getEquationParameter(Line2D line2D) {
         //extract
@@ -134,25 +130,24 @@ public class Line2D extends AbstractSmoothCurve2D
         double x0 = point1.getX();
         double y0 = point1.getY();
 
-        StringBuilder res = new StringBuilder();
-        res.append("x = ");
-        res.append(x0);
-        res.append("+");
-        res.append(u1);
-        res.append("t");
-        res.append("\n");
-        res.append("y = ");
-        res.append(y0);
-        res.append("+");
-        res.append(u2);
-        res.append("t");
-        return res.toString();
+        return "x = " +
+                x0 +
+                "+" +
+                u1 +
+                "t" +
+                "\n" +
+                "y = " +
+                y0 +
+                "+" +
+                u2 +
+                "t";
     }
 
     /**
-     * công thức a(x - x0) + b(y - y0) = 0 với vector phap tuyen n(a;b) va diem p1(x0;y0)
+     * Formula: a(x - x0) + b(y - y0) = 0
+     * vector n(a;b) and point p1(x0;y0)
      *
-     * @return phương trình tổng quát
+     * @return general equation
      */
     public static String getGeneralEquation(Line2D line2D) {
         Vector2D vecPhoenix = new Vector2D(line2D.getPoint1(), line2D.getPoint2());
@@ -178,9 +173,7 @@ public class Line2D extends AbstractSmoothCurve2D
     }
 
     /**
-     * phương trình tham số
-     *
-     * @return phương trình tham số
+     * @return Parameter equation
      */
     public String getEquationParameter() {
         Vector2D vecPhoenix = new Vector2D(p1, p2);
@@ -189,19 +182,8 @@ public class Line2D extends AbstractSmoothCurve2D
         double x0 = p1.getX();
         double y0 = p1.getY();
 
-        StringBuilder res = new StringBuilder();
-        res.append("x = ");
-        res.append(x0);
-        res.append("+");
-        res.append(u1);
-        res.append("t");
-        res.append("\n");
-        res.append("y = ");
-        res.append(y0);
-        res.append("+");
-        res.append(u2);
-        res.append("t");
-        return res.toString();
+        return "x = " + x0 + "+" + u1 + "t" + "\n" +
+                "y = " + y0 + "+" + u2 + "t";
     }
 
     /**
@@ -323,28 +305,28 @@ public class Line2D extends AbstractSmoothCurve2D
         return new com.example.duy.calculator.geom2d.line.LineSegment2D(p1, p2).horizontalAngle();
     }
 
-    /* (non-Javadoc)
+    /*
      * @see LinearShape2D#intersection(LinearShape2D)
      */
     public Point2D intersection(com.example.duy.calculator.geom2d.line.LinearShape2D line) {
         return new com.example.duy.calculator.geom2d.line.LineSegment2D(p1, p2).intersection(line);
     }
 
-    /* (non-Javadoc)
+    /*
      * @see LinearShape2D#origin()
      */
     public Point2D origin() {
         return p1;
     }
 
-    /* (non-Javadoc)
+    /*
      * @see LinearShape2D#supportingLine()
      */
     public com.example.duy.calculator.geom2d.line.StraightLine2D supportingLine() {
         return new com.example.duy.calculator.geom2d.line.StraightLine2D(p1, p2);
     }
 
-    /* (non-Javadoc)
+    /*
      * @see LinearShape2D#direction()
      */
     public Vector2D direction() {
@@ -538,7 +520,7 @@ public class Line2D extends AbstractSmoothCurve2D
         return new Line2D(this.point(t0), this.point(t1));
     }
 
-    /* (non-Javadoc)
+    /*
      * @see Curve2D#intersections(LinearShape2D)
      */
     public Collection<Point2D> intersections(com.example.duy.calculator.geom2d.line.LinearShape2D line) {
@@ -588,12 +570,6 @@ public class Line2D extends AbstractSmoothCurve2D
     }
 
 
-    // ===================================================================
-    // methods inherited from Object interface
-
-    /* (non-Javadoc)
-     * @see GeometricObject2D#almostEquals(GeometricObject2D, double)
-     */
     public boolean almostEquals(GeometricObject2D obj, double eps) {
         if (this == obj)
             return true;
@@ -608,9 +584,7 @@ public class Line2D extends AbstractSmoothCurve2D
     }
 
     /**
-     * lấy trung điểm
-     *
-     * @return object Point2D
+     * get mid point of the line
      */
     public Point2D getMidPoint() {
         return Point2D.midPoint(p1, p2);
@@ -654,9 +628,8 @@ public class Line2D extends AbstractSmoothCurve2D
     }
 
     /**
-     * công thức a(x - x0) + b(y - y0) = 0 với vector phap tuyen n(a;b) va diem p1(x0;y0)
-     *
-     * @return phương trình tổng quát
+     * Formular a(x - x0) + b(y - y0) = 0
+     * @return general equation
      */
     public String getGeneralEquation() throws Exception {
         Vector2D vecPhoenix = new Vector2D(p1, p2);

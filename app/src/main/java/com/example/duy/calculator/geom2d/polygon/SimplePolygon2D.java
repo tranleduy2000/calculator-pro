@@ -36,6 +36,7 @@ import com.example.duy.calculator.geom2d.line.LineSegment2D;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 
 /**
  * Represent a polygonal domain whose boundary is a single closed polyline.
@@ -69,8 +70,7 @@ public class SimplePolygon2D implements Polygon2D {
      */
     public SimplePolygon2D(Point2D... vertices) {
         this.vertices = new ArrayList<Point2D>(vertices.length);
-        for (Point2D vertex : vertices)
-            this.vertices.add(vertex);
+        Collections.addAll(this.vertices, vertices);
     }
 
     // ===================================================================

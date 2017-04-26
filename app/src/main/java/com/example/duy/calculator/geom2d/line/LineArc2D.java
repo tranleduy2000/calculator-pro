@@ -395,8 +395,8 @@ public class LineArc2D extends AbstractLine2D implements Cloneable {
 
     @Override
     public String toString() {
-        return new String("LineArc2D(" + x0 + "," + y0 + "," +
-                dx + "," + dy + "," + t0 + "," + t1 + ")");
+        return "LineArc2D(" + x0 + "," + y0 + "," +
+                dx + "," + dy + "," + t0 + "," + t1 + ")";
     }
 
     /* (non-Javadoc)

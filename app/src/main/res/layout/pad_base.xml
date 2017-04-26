@@ -73,6 +73,7 @@
         <com.example.duy.calculator.view.BaseButton
             android:id="@+id/btn_clear"
             style="?buttonAdvanceStyle"
+            android:layout_width="0dp"
             android:layout_weight="2"
             android:scaleType="center"
             android:text="@string/clear" />
@@ -159,17 +160,17 @@
         <com.example.duy.calculator.view.BaseButton
             android:id="@+id/A"
             style="?buttonDigitStyle"
-            android:text="A" />
+            android:text="@string/A" />
 
         <com.example.duy.calculator.view.BaseButton
             android:id="@+id/B"
             style="?buttonDigitStyle"
-            android:text="B" />
+            android:text="@string/B" />
 
         <com.example.duy.calculator.view.BaseButton
             android:id="@+id/C"
             style="?buttonDigitStyle"
-            android:text="C" />
+            android:text="@string/C" />
 
         <com.example.duy.calculator.view.BaseButton
             android:id="@+id/D"

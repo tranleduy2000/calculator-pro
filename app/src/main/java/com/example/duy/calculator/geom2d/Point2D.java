@@ -537,7 +537,7 @@ public class Point2D
 
     @Override
     public String toString() {
-        return new String("Point2D(" + x + "; " + y + ")");
+        return "Point2D(" + x + "; " + y + ")";
     }
 
     /**

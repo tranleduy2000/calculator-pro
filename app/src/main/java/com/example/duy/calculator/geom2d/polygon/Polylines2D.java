@@ -111,11 +111,9 @@ public abstract class Polylines2D {
 
         int[] res = new int[n];
 
-        for (int i = 0; i < inds1.length; i++)
-            res[i] = inds1[i];
+        System.arraycopy(inds1, 0, res, 0, inds1.length);
         res[inds1.length] = indMid;
-        for (int i = inds1.length + 1; i < n; i++)
-            res[i] = inds2[i - (inds1.length + 1)];
+        System.arraycopy(inds2, inds1.length + 1 - (inds1.length + 1), res, inds1.length + 1, n - (inds1.length + 1));
 
         return res;
     }

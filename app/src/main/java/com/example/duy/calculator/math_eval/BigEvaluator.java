@@ -40,7 +40,7 @@ import java.util.regex.Pattern;
 public final class BigEvaluator extends LogicEvaluator {
     private static final String ANS_VAR = "ans";
     private static final String TAG = "BigEvaluator";
-    public static BigEvaluator mEvaluator;
+
     private int numDecimal = 10;
     /**
      * symja parser
@@ -90,10 +90,7 @@ public final class BigEvaluator extends LogicEvaluator {
      * @return - mEvaluator
      */
     public static BigEvaluator getInstance(Context context) {
-        if (mEvaluator == null) {
-            mEvaluator = new BigEvaluator(context);
-        }
-        return mEvaluator;
+        return new BigEvaluator(context);
     }
 
     /**

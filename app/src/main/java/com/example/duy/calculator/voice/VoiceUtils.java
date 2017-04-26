@@ -9,7 +9,6 @@ import java.util.ArrayList;
  * @Author Mr. Duy
  * Created by Duy on 28-Oct-16.
  */
-
 public class VoiceUtils {
     private ArrayList<ItemReplace> mReplace = new ArrayList<>();
     private Context context;

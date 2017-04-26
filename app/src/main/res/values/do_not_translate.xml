@@ -3,11 +3,11 @@
     <string name="app_name" translatable="false">NCalc+ (BETA)</string>
 
     <!-- Displayed letters for the hex digit buttons -->
-    <string name="A" translatable="false">a</string>
+    <string name="A" translatable="false">A</string>
     <!-- Displayed letters for the hex digit buttons -->
-    <string name="B" translatable="false">b</string>
+    <string name="B" translatable="false">B</string>
     <!-- Displayed letters for the hex digit buttons -->
-    <string name="C" translatable="false">c</string>
+    <string name="C" translatable="false">C</string>
     <!-- Displayed letters for the hex digit buttons -->
     <string name="D" translatable="false">D</string>
     <!-- Displayed letters for the hex digit buttons -->
@@ -102,7 +102,6 @@
     <string name="sin" translatable="false">sin</string>
     <string name="cos" translatable="false">cos</string>
     <string name="tan" translatable="false">tan</string>
-    <string name="e" translatable="false">e</string>
     <string name="ln" translatable="false">ln</string>
     <!-- Do not translate. What we replace translated ln with for calculating ln. -->
 
@@ -196,9 +195,6 @@
     <string name="matrix_add" translatable="false">A + B</string>
     <string name="exp" translatable="false">exp</string>
 
-    <string name="acosh" translatable="false">acosh</string>
-    <string name="asinh" translatable="false">asinh</string>
-    <string name="atanh" translatable="false">atanh</string>
     <string name="arccosh" translatable="false">acosh</string>
     <string name="arcsinh" translatable="false">asinh</string>
     <string name="arctanh" translatable="false">atanh</string>

@@ -520,8 +520,8 @@ public class StraightLine2D extends AbstractLine2D implements
 
     @Override
     public String toString() {
-        return new String("StraightLine2D(" + x0 + "," + y0 + "," +
-                dx + "," + dy + ")");
+        return "StraightLine2D(" + x0 + "," + y0 + "," +
+                dx + "," + dy + ")";
     }
 
     @Override

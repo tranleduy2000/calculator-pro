@@ -685,8 +685,8 @@ public class AffineTransform2D implements GeometricObject2D {
      */
     @Override
     public String toString() {
-        return new String("AffineTransform2D(" + m00 + "," + m01 + "," + m02
-                + "," + m10 + "," + m11 + "," + m12 + ",");
+        return "AffineTransform2D(" + m00 + "," + m01 + "," + m02
+                + "," + m10 + "," + m11 + "," + m12 + ",";
     }
 
     @Override

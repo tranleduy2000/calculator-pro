@@ -24,7 +24,6 @@
 
     <string name="title_activity_graph">Đồ thị</string>
     <string name="all_unit_converter">Chuyển đổi đơn vị</string>
-    <string name="title_activity_unit_converter_acitvity">Chuyển đổi đơn vị</string>
 
     <!-- Content description for \'e\' button. [CHAR_LIMIT=NONE] -->
     <!-- Content description for \'π\' button. [CHAR_LIMIT=NONE] -->
@@ -59,9 +58,6 @@
     <!-- Displayed on button on screen for the cube root function. -->
 
 
-    <string name="title_activity_settings">Cài đặt</string>
-
-    <string name="title_activity_geometry">Hình học 2D Descartes</string>
     <string name="nav_descartes">Hình học 2D</string>
     <string name="polygon">Đa giác</string>
     <string name="circle">Đường tròn</string>
@@ -91,7 +87,6 @@
     <string name="logic_calculator">Máy tính cơ số</string>
 
     <string name="science_calculator">Máy tính khoa học</string>
-    <string name="title_activity_matrix_calculator">Ma trận</string>
 
     <string name="matrix">Ma trận</string>
     <string name="row">dòng</string>
@@ -159,7 +154,6 @@
         Nhấn nút [tìm nghiệm]
     </string>
     <string name="gi_i_thi_u_v_calc">Giới thiệu về Ncalc</string>
-    <string name="not_input">Chưa nhập dữ liệu</string>
 
     <string name="not_input_equation">Chưa nhập hệ phương trình</string>
     <string name="add_function">Thêm hàm số</string>
@@ -559,7 +553,6 @@ Ví dụ như 2x + 1, 2x^2-x-1
     <string name="add_equation">Thêm phương trình</string>
     <string name="calc">Calc</string>
     <string name="cannot_factor">Không thể phân tích thừa số nguyên tố</string>
-    <string name="define_var">Định nghĩa giá trị của biến</string>
 
     <string name="enter_value">Nhập giá trị</string>
     <string name="name">Tên</string>
@@ -647,17 +640,10 @@ Ví dụ như 2x + 1, 2x^2-x-1
     </string>
     <string name="input_matrix">Ma trận</string>
     <string name="input_equation_">Phương trình</string>
-    <string name="my_own_cancel">Để sau</string>
-    <string name="my_own_rate">Đánh giá</string>
-    <string name="my_own_thanks">Không, cảm ơn.</string>
-    <string name="my_own_title">Đánh giá ứng dụng</string>
-    <string name="plese_enter_function">Vui lòng nhập các hàm số.</string>
-    <string name="my_own_message">Nếu bạn thích sử dụng ứng dụng này, bạn có thể chút thời gian để đánh giá để ủng hộ nhà phát triển? Nó sẽ không mất nhiều hơn một phút. Cảm ơn sự ủng hộ của bạn!</string>
     <string name="advance">Nâng cao</string>
     <string name="calculator">Máy tính</string>
     <string name="ui">Giao diện</string>
     <string name="precision_">Độ chính xác</string>
-    <string name="exit_app">Bạn có muốn thoát ứng dụng?</string>
     <string name="fraction_decs"><![CDATA[Chuyển đổi kết quả ở dạng phân số hoặc số thập phận.
     \n Hiển thị 1/2 thay vì 0.5]]></string>
     <string name="fraction_mode">Phân số</string>
@@ -669,32 +655,15 @@ Ví dụ như 2x + 1, 2x^2-x-1
     <string name="camera">Máy ảnh</string>
     <string name="delete_x">Xóa</string>
     <string name="hand_geome">Vẽ hình học</string>
-    <string name="enable_google_voice_typing">Vui lòng bật google voice để sử dụng ứng dụng!</string>
-    <string name="input_something">Please input something to speak!</string>
     <string name="redo">Redo</string>
     <string name="hand_pad">Chạm để mở bàn phím</string>
-    <string name="introduction">Tap on one of the buttons to try an action</string>
     <string name="permission_required">Bạn cần cho phép ứng dụng ghi âm</string>
-    <string name="repeat">Đọc biểu thức</string>
-    <string name="say_something">Đọc biểu thức</string>
-    <string name="speech_not_available">Nhận dạng giọng nói không có sẵn trên thiết bị. Vui lòng cài đặt Google Voice để sử dụng</string>
-    <string name="start_listening">Bắt đầu lắng nghe</string>
-    <string name="stop_listening">Start listening</string>
-    <string name="tts_hint">Write something to speech</string>
     <string name="undo">Undo</string>
 
-    <string name="latex_summary">KaTeX là nhanh hơn so với MathJax trên môi trường di động, nhưng MathJax hỗ trợ nhiều tính năng hơn và đẹp hơn rất nhiều.</string>
-    <string name="action_settings">Cài đặt</string>
-
-    <string name="latex_engine">LaTeX engine</string>
     <string name="tit_trig_expand">Phân tích hàm lượng giác</string>
     <string name="tit_trig_reduce">Thu gọn hàm lượng giác</string>
     <string name="tit_trig_to_exp">Hàm lượng giác sang hàm mũ</string>
     <string name="trigonometry">Lượng giác</string>
-    <string name="trig_expand_desc">Mở rộng biểu thức lượng giác.</string>
-    <string name="trig_reduce_desc">Thu gọn hàm lượng giác</string>
-    <string name="trig_to_exp_desc">Chuyển đổi các hàm lượng giác sang hàm mũ.</string>
-    <string name="close_drawer">Đóng drawer</string>
     <string name="cannot_factor_polynomial">Không thể phân tích đa thức thành nhân tử</string>
     <string name="catalan_desc">Tính số Catalan thứ n</string>
     <string name="please_enter_number">Vui lòng nhập số.</string>
@@ -703,7 +672,4 @@ Ví dụ như 2x + 1, 2x^2-x-1
     <string name="catalan_number">Số Catalan</string>
     <string name="fibonacci">Số fibonacci</string>
     <string name="prime">Số nguyên tố</string>
-    <string name="new_version_update">Đã có bản cập nhật mới cho ứng dụng, bạn có muốn cập nhật bây giờ!</string>
-    <string name="dismiss">Không hiện lại</string>
-    <string name="notify_update">Thông báo cập nhật ứng dụng.</string>
 </resources>

@@ -16,7 +16,6 @@
 
     <!--Graph-->
     <color name="black">#000000</color>
-    <color name="color_grey_700">#616161</color>
 
     <color name="red">#D50000</color>
     <color name="purple">#AA00ff</color>
@@ -24,11 +23,4 @@
     <color name="teal">#009688</color>
     <color name="lime">#CDDC39</color>
 
-    <array name="bar_color">
-        <item>@color/red</item>
-        <item>@color/purple</item>
-        <item>@color/indigo</item>
-        <item>@color/teal</item>
-        <item>@color/lime</item>
-    </array>
 </resources>

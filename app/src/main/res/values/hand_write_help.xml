@@ -22,7 +22,6 @@
     <string name="action_out_image">c</string>
 
     <string name="save">Save</string>
-    <string name="input_value">Enter value here…</string>
     <string name="edit_length">Length of segment</string>
     <string name="edit_label">Label of point</string>
     <string name="edit_angle">Value of angle</string>

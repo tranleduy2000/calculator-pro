@@ -293,8 +293,8 @@ public class InvertedRay2D extends AbstractLine2D {
 
     @Override
     public String toString() {
-        return new String("InvertedRay2D(" + x0 + "," + y0 + "," +
-                dx + "," + dy + ")");
+        return "InvertedRay2D(" + x0 + "," + y0 + "," +
+                dx + "," + dy + ")";
     }
 
     @Override

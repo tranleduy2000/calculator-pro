@@ -14,7 +14,6 @@
         android:layout_weight="200" />
 
     <com.sothree.slidinguppanel.SlidingUpPanelLayout
-        android:id="@+id/graph_controller"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="500"
@@ -96,7 +95,6 @@
         </FrameLayout>
 
         <com.example.duy.calculator.version_old.graph.FastGraphView
-            android:id="@+id/graph_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </com.sothree.slidinguppanel.SlidingUpPanelLayout>

@@ -38,8 +38,7 @@ public class MultiPolygon2D implements Polygon2D {
     // Constructors
 
     public MultiPolygon2D(LinearRing2D... rings) {
-        for (LinearRing2D ring : rings)
-            this.rings.add(ring);
+        Collections.addAll(this.rings, rings);
     }
 
 
