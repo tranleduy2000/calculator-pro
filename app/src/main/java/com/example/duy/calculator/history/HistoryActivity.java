@@ -23,11 +23,11 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
-<<<<<<< HEAD
+ * <<<<<<< HEAD
  * History activity
- *
-=======
->>>>>>> refs/remotes/origin/master
+ * <p>
+ * =======
+ * >>>>>>> refs/remotes/origin/master
  * Created by DUy on 29-Nov-16.
  */
 

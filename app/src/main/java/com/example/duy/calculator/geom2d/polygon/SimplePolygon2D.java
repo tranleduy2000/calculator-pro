@@ -353,7 +353,6 @@ public class SimplePolygon2D implements Polygon2D {
     }
 
 
-
     /**
      * Returns true if polygon is oriented counter-clockwise, false otherwise.
      */

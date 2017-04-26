@@ -16,15 +16,15 @@ public class HandWriteView extends MathWidget {
         setUp();
     }
 
-    private void setUp() {
-
-    }
-
     public HandWriteView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
     public HandWriteView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
+    }
+
+    private void setUp() {
+
     }
 }

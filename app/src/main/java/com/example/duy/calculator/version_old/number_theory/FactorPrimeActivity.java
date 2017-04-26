@@ -47,7 +47,7 @@ public class FactorPrimeActivity extends AbstractEvaluatorActivity {
             showHelp();
         }
 
-       setAutoEval();
+        setAutoEval();
     }
 
     private void setAutoEval() {

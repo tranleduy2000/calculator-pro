@@ -8,7 +8,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import com.example.duy.calculator.R;
 
 public class SectionPagerAdapter extends FragmentPagerAdapter {
-    private static final int mCount =2;
+    private static final int mCount = 2;
     private Activity activity;
 
     public SectionPagerAdapter(FragmentManager fm, Activity activity) {

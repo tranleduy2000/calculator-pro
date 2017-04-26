@@ -141,7 +141,6 @@ public class InvertedRay2D extends AbstractLine2D {
     /**
      * Returns another instance of InvertedRay2D, parallel to this one,
      * and located at the given distance.
-     *
      */
     public InvertedRay2D parallel(double d) {
         double dd = Math.hypot(dx, dy);
@@ -258,7 +257,6 @@ public class InvertedRay2D extends AbstractLine2D {
         double t = this.positionOnLine(x, y);
         return t < Shape2D.ACCURACY;
     }
-
 
 
     // ===================================================================

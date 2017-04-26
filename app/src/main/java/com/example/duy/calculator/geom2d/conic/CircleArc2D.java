@@ -68,7 +68,7 @@ import static java.lang.Math.sin;
  * @author dlegland
  */
 public class CircleArc2D extends AbstractSmoothCurve2D
-        implements  CircularShape2D, Cloneable {
+        implements CircularShape2D, Cloneable {
 
     // ====================================================================
     // static factories
@@ -526,8 +526,7 @@ public class CircleArc2D extends AbstractSmoothCurve2D
     }
 
     /**
-
-    /**
+     * /**
      * Returns false, as a circle arc is never closed by definition.
      */
     public boolean isClosed() {

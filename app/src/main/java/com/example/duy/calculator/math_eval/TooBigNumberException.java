@@ -9,6 +9,7 @@ public class TooBigNumberException extends Exception {
 
     /**
      * Constructor
+     *
      * @param isTooBig - is value too big
      */
     public TooBigNumberException(boolean isTooBig) {

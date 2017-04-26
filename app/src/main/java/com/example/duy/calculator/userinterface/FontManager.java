@@ -20,20 +20,12 @@ public final class FontManager {
      */
     private static Typeface typeface = null;
 
-<<<<<<< HEAD
     public static Typeface getInstance(Context context) {
         if (typeface != null) return typeface;
         String path = "fonts/";
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
         String font = sharedPreferences.getString(context.getString(R.string.key_pref_font), context.getString(R.string.font_light));
-=======
-    public static Typeface loadTypefaceFromAsset(Context context) {
-        if (typeface != null) return typeface;
-        String path = "fonts/";
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
-        String font = sharedPreferences.getString(context.getString(R.string.key_pref_font),
-                context.getString(R.string.font_light));
->>>>>>> refs/remotes/origin/master
+
         if (font.equals(context.getString(R.string.font_black))) {
             path = path + "Roboto-Black.ttf";
         } else if (font.equals(context.getString(R.string.font_light))) {
@@ -50,13 +42,11 @@ public final class FontManager {
         return typeface;
     }
 
-<<<<<<< HEAD
     /**
      * @param context - Android context
      * @return current name of font setting
      */
-=======
->>>>>>> refs/remotes/origin/master
+
     public String getFont(Context context) {
         String path = "fonts/";
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
@@ -76,13 +66,11 @@ public final class FontManager {
         return path + "Roboto-Light.ttf";
     }
 
-<<<<<<< HEAD
     /**
      * @param context - Android context
      * @return font of setting.
      */
-=======
->>>>>>> refs/remotes/origin/master
+
     public Typeface getTypeFace(Context context) {
         String path = "fonts/";
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);

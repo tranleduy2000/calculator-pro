@@ -161,6 +161,7 @@ public class Angle2D {
         double angle2 = obj2.horizontalAngle();
         return (angle2 - angle1 + M_2PI) % (M_2PI);
     }
+
     /**
      * Returns the oriented angle between two (directed) straight objects.
      * Result is given in radians, between 0 and 2*PI.

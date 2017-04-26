@@ -14,23 +14,17 @@ import com.example.duy.calculator.DLog;
 import com.example.duy.calculator.R;
 import com.example.duy.calculator.data.Database;
 import com.example.duy.calculator.math_eval.Tokenizer;
-<<<<<<< HEAD
 import com.example.duy.calculator.utils.ClipboardManager;
-=======
 import com.example.duy.calculator.utils.MyClipboard;
->>>>>>> refs/remotes/origin/master
 
 import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-<<<<<<< HEAD
 /**
  * Adapter history for recycle view
  */
-=======
->>>>>>> refs/remotes/origin/master
 public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHolder> {
     private ArrayList<HistoryEntry> itemHistories = new ArrayList<>();
     private Activity context;
@@ -125,11 +119,7 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHold
         holder.imgCopy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-<<<<<<< HEAD
                 ClipboardManager.setClipboard(context, historyEntry.getMath());
-=======
-                MyClipboard.setClipboard(context, historyEntry.getMath());
->>>>>>> refs/remotes/origin/master
             }
         });
         holder.imgShare.setOnClickListener(new View.OnClickListener() {

@@ -214,7 +214,6 @@ public class CubicBezierCurve2D extends AbstractSmoothCurve2D
 
     /**
      * Use winding angle of approximated polyline
-     *
      */
     public double windingAngle(Point2D point) {
         return this.asPolyline(100).windingAngle(point);
@@ -237,6 +236,7 @@ public class CubicBezierCurve2D extends AbstractSmoothCurve2D
         else
             return distance(point.x(), point.y());
     }
+
     public double signedDistance(double x, double y) {
         if (isInside(new Point2D(x, y)))
             return -distance(x, y);

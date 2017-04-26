@@ -15,10 +15,12 @@ public class TimeStratery implements Strategy {
     public TimeStratery(Context context) {
         this.context = context;
     }
+
     @Override
     public String getUnitDefault() {
         return context.getResources().getString(R.string.timeunitsecond);
     }
+
     @Override
     public double Convert(String from, String to, double input) {
         if ((from.equals(context.getResources().getString(R.string.timeunitsecond))) &&

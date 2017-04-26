@@ -1,4 +1,3 @@
-
 package com.example.duy.calculator.geom2d.util;
 
 
@@ -39,7 +38,7 @@ public final class EqualUtils {
 
     static public boolean areEqual(long aThis, long aThat) {
         /*
-		 * Implementation Note
+         * Implementation Note
 		 * Note that byte, short, and int are handled by this method, through
 		 * implicit conversion.
 		 */

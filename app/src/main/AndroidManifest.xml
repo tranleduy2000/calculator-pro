@@ -57,72 +57,24 @@
         <activity
             android:name=".version_old.converter.UnitConverterParentAcitvity"
             android:configChanges="keyboardHidden|screenSize"
-<<<<<<< HEAD
             android:launchMode="singleTask" />
-=======
-         />
->>>>>>> refs/remotes/origin/master
 
         <activity android:name=".version_old.converter.UnitConverterChildActivity" />
-        <activity
-            android:name=".SettingsActivity"
-<<<<<<< HEAD
-
-=======
->>>>>>> refs/remotes/origin/master
-            android:label="@string/title_activity_settings" />
+        <activity android:name=".SettingsActivity" />
         <activity
             android:name=".version_old.geom2d.GeometryDescartesActivity"
-            android:configChanges="keyboardHidden|screenSize"
-<<<<<<< HEAD
+            android:configChanges="keyboardHidden|screenSize" />
 
-            android:launchMode="singleTask" />
-        <activity
-            android:name=".version_old.activities.BaseCalculatorActivity"
-            android:configChanges="keyboardHidden|screenSize"
-            android:launchMode="singleTask" />
-=======
-         />
         <activity
             android:name=".version_old.activities.BaseCalculatorActivity"
             android:configChanges="keyboardHidden|screenSize" />
->>>>>>> refs/remotes/origin/master
         <activity
             android:name=".helper.AppAboutActivity"
             android:label="@string/title_activity_app_about" />
         <activity
             android:name=".version_old.activities.MatrixCalculatorActivity"
-            android:configChanges="keyboardHidden|screenSize"
-<<<<<<< HEAD
-            android:label="@string/title_activity_matrix_calculator"
-            android:launchMode="singleTask" />
-        <activity
-            android:name=".version_old.activities.SolveEquationActivity"
-            android:configChanges="keyboardHidden|screenSize"
-            android:launchMode="singleTask" />
-        <activity
-            android:name=".version_old.activities.SimplifyEquationActivity"
-            android:configChanges="keyboardHidden|screenSize"
-            android:launchMode="singleTask" />
-        <activity
-            android:name=".version_old.activities.FactorExpressionActivity"
-            android:configChanges="keyboardHidden|screenSize"
-            android:launchMode="singleTask" />
-        <activity
-            android:name=".version_old.activities.DerivativeActivity"
-            android:configChanges="keyboardHidden|screenSize"
-            android:launchMode="singleTask" />
+            android:configChanges="keyboardHidden|screenSize" />
 
-        <activity
-            android:name=".version_old.activities.StatisticActivity"
-            android:configChanges="keyboardHidden|screenSize"
-            android:launchMode="singleTask" />
-        <activity
-            android:name=".version_old.activities.ExpandAllExpressionActivity"
-            android:configChanges="keyboardHidden|screenSize"
-            android:launchMode="singleTask" />
-=======
-            android:label="@string/title_activity_matrix_calculator" />
         <activity
             android:name=".version_old.activities.SolveEquationActivity"
             android:configChanges="keyboardHidden|screenSize" />
@@ -142,7 +94,6 @@
         <activity
             android:name=".version_old.activities.ExpandAllExpressionActivity"
             android:configChanges="keyboardHidden|screenSize" />
->>>>>>> refs/remotes/origin/master
         <activity
             android:name=".view.MathViewActivity"
             android:configChanges="keyboardHidden|screenSize" />
@@ -152,7 +103,6 @@
             android:label="@string/add_function" />
         <activity android:name=".helper.HelperActivity" />
         <activity android:name=".history.HistoryActivity" />
-<<<<<<< HEAD
         <activity
             android:name=".version_old.system_equation.SystemEquationActivity"
             android:launchMode="singleTask" />
@@ -179,18 +129,7 @@
         <activity
             android:name=".version_old.number_theory.ModuleActivity"
             android:launchMode="singleTask" />
-=======
-        <activity android:name=".version_old.system_equation.SystemEquationActivity" />
-        <activity android:name=".define.DefineVariableActivity" />
-        <activity android:name=".version_old.activities.LimitActivity" />
-        <activity android:name=".version_old.activities.IntegrateActivity" />
-        <activity android:name=".version_old.activities.PrimitiveActivity" />
-        <activity android:name=".helper.LicenseActivity" />
-        <activity android:name=".helper.InfoLicenseActivity" />
-        <activity android:name=".version_old.number_theory.FactorPrimeActivity" />
-        <activity android:name=".version_old.number_theory.PermutationActivity" />
-        <activity android:name=".version_old.number_theory.ModuleActivity" />
->>>>>>> refs/remotes/origin/master
+
         <activity
             android:name=".dev.CommandActivity"
             android:label="@string/cmd"
@@ -200,7 +139,6 @@
             android:label="@string/step_by_step"
             android:theme="@style/Theme.AppCompat" />
 
-<<<<<<< HEAD
         <activity
             android:name="com.example.duy.calculator.hand_write.HandCalculatorActivity"
             android:launchMode="singleTask" />
@@ -213,11 +151,6 @@
         <activity
             android:name=".version_old.number_theory.NumberActivity"
             android:launchMode="singleTask" />
-=======
-        <activity android:name="com.example.duy.calculator.hand_write.HandCalculatorActivity" />
-        <activity android:name="com.example.duy.calculator.hand_write.HandGeometryActivity" />
-        <activity android:name=".version_old.trigonometry.TrigActivity" />
-        <activity android:name=".version_old.number_theory.NumberActivity" />
->>>>>>> refs/remotes/origin/master
+
     </application>
 </manifest>

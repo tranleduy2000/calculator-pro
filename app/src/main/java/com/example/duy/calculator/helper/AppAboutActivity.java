@@ -11,12 +11,9 @@ import android.view.View;
 import com.example.duy.calculator.AbstractAppCompatActivity;
 import com.example.duy.calculator.R;
 
-<<<<<<< HEAD
 /**
  * some information of application
  */
-=======
->>>>>>> refs/remotes/origin/master
 public class AppAboutActivity extends AbstractAppCompatActivity {
 
     @Override

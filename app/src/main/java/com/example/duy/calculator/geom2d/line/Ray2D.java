@@ -150,7 +150,6 @@ public class Ray2D extends AbstractLine2D {
 
     /**
      * Returns a new ray parallel to this one, at the given relative distance.
-     *
      */
     public Ray2D parallel(double d) {
         double dd = Math.hypot(dx, dy);
@@ -240,7 +239,6 @@ public class Ray2D extends AbstractLine2D {
         double t = this.positionOnLine(x, y);
         return t > -Shape2D.ACCURACY;
     }
-
 
 
     // ===================================================================

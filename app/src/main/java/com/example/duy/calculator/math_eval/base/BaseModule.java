@@ -54,7 +54,7 @@ public class BaseModule extends Module {
     /**
      * Updates the text to the new base. This does not set the active base.
      */
-    public  String changeBase(String text, Base base) throws SyntaxException {
+    public String changeBase(String text, Base base) throws SyntaxException {
         return changeBase(text, Base.DECIMAL, base);
     }
 

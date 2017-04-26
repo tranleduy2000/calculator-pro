@@ -12,12 +12,12 @@ import java.util.Set;
 
 
 /**
-<<<<<<< HEAD
+ * <<<<<<< HEAD
  * Keeps track of the application wide number base,
  * and manages the IDs of views to disable
-=======
+ * =======
  * Keeps track of the application wide number base, and manages the IDs of views to disable
->>>>>>> refs/remotes/origin/master
+ * >>>>>>> refs/remotes/origin/master
  * when changing base.
  */
 public class NumberBaseManager {
@@ -32,10 +32,10 @@ public class NumberBaseManager {
         List<Integer> hexList = Arrays.asList(R.id.A, R.id.B, R.id.C, R.id.D, R.id.E, R.id.F);
         List<Integer> binaryList = Arrays.asList(
                 R.id.digit2, R.id.digit3, R.id.digit4,
-                        R.id.digit5, R.id.digit6,
-                        R.id.digit7,
-                        R.id.digit8,
-                        R.id.digit9);
+                R.id.digit5, R.id.digit6,
+                R.id.digit7,
+                R.id.digit8,
+                R.id.digit9);
 
         List<Integer> octalList = Arrays.asList(R.id.digit8, R.id.digit9);
         Set<Integer> disabledForBinary = new HashSet<>(binaryList);

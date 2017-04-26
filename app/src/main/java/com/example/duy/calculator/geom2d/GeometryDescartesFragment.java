@@ -13,7 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.duy.calculator.version_new_error.AbstractFragment;
+import com.example.duy.calculator.AbstractFragment;
 import com.example.duy.calculator.R;
 
 public class GeometryDescartesFragment extends AbstractFragment {

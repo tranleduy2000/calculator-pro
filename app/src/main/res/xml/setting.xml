@@ -3,10 +3,6 @@
     <PreferenceCategory android:title="@string/calculator">
         <CheckBoxPreference
             android:defaultValue="true"
-<<<<<<< HEAD
-=======
-
->>>>>>> refs/remotes/origin/master
             android:enabled="false"
             android:key="@string/key_pref_instant_res"
             android:summary="@string/summary_instant_res"

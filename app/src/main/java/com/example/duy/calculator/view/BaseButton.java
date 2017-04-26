@@ -8,11 +8,13 @@ import android.widget.Button;
 
 import com.example.duy.calculator.userinterface.FontManager;
 
+import static org.apache.commons.math4.util.MathArrays.Position.HEAD;
+
 /**
  * Created by DUy on 21-Jan-17.
  */
 
-public class BaseButton extends Button {
+public class BaseButton extends android.support.v7.widget.AppCompatButton {
 
     public BaseButton(Context context) {
         super(context);
@@ -33,11 +35,7 @@ public class BaseButton extends Button {
     }
 
     private void setup(Context context) {
-<<<<<<< HEAD
         setTypeface(FontManager.getInstance(context));
-=======
-        setTypeface(FontManager.loadTypefaceFromAsset(context));
->>>>>>> refs/remotes/origin/master
 
         String text = getText().toString();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {

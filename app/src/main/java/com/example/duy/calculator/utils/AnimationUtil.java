@@ -87,15 +87,15 @@ public class AnimationUtil {
     /**
      * Shrink view1 and then grow view2
      *
-     * @param view1 view to shrink
-     * @param view2 view to grow
+     * @param view1    view to shrink
+     * @param view2    view to grow
      * @param duration duration for each phase of the animation
      */
     public static void shrinkAndGrow(final View view1, final View view2, int duration) {
         ScaleAnimation shrinkAnim =
-                new ScaleAnimation(1, 0, 1, 0, view1.getWidth()/2, view1.getHeight()/2);
+                new ScaleAnimation(1, 0, 1, 0, view1.getWidth() / 2, view1.getHeight() / 2);
         final ScaleAnimation growAnim =
-                new ScaleAnimation(0, 1, 0, 1, view2.getWidth()/2, view2.getHeight()/2);
+                new ScaleAnimation(0, 1, 0, 1, view2.getWidth() / 2, view2.getHeight() / 2);
         shrinkAnim.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {

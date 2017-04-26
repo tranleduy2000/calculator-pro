@@ -5,6 +5,8 @@ package com.example.duy.calculator.geom2d;
  */
 public interface Geometric {
     public void onPrepare();
+
     public void onResult();
+
     public void onError();
 }

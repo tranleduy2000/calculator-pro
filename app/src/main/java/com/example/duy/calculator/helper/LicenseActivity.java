@@ -14,10 +14,10 @@ import com.example.duy.calculator.AbstractAppCompatActivity;
 import com.example.duy.calculator.R;
 
 /**
-<<<<<<< HEAD
+ * <<<<<<< HEAD
  * License view
-=======
->>>>>>> refs/remotes/origin/master
+ * =======
+ * >>>>>>> refs/remotes/origin/master
  * Created by DUy on 12-Dec-16.
  */
 

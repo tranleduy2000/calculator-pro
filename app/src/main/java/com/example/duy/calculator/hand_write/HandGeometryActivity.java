@@ -29,7 +29,6 @@ import com.sothree.slidinguppanel.SlidingUpPanelLayout;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
-<<<<<<< HEAD
 /**
  * geometric hand writer
  * <p>
@@ -39,8 +38,6 @@ import java.text.NumberFormat;
  * square
  * ....
  */
-=======
->>>>>>> refs/remotes/origin/master
 public class HandGeometryActivity extends AbstractAppCompatActivity implements GeometryWidgetApi.OnEditingListener {
 
     private static final String TAG = "GeometryActivity";
@@ -60,13 +57,8 @@ public class HandGeometryActivity extends AbstractAppCompatActivity implements G
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         setTitle(R.string.hand_geometry);
-<<<<<<< HEAD
-        mWidget = (GeometryWidgetApi) findViewById(R.id.geometry_widget);
-=======
-
         mWidget = (GeometryWidgetApi) findViewById(R.id.geometry_widget);
 
->>>>>>> refs/remotes/origin/master
         if (!mWidget.registerCertificate(MyCertificate.getBytes())) {
             AlertDialog.Builder dlgAlert = new AlertDialog.Builder(this);
             dlgAlert.setMessage("Please use a valid certificate.");
@@ -81,7 +73,6 @@ public class HandGeometryActivity extends AbstractAppCompatActivity implements G
             return;
         }
 
-<<<<<<< HEAD
         setupHandWrite();
         findViewById(R.id.fab_close).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -114,8 +105,7 @@ public class HandGeometryActivity extends AbstractAppCompatActivity implements G
      */
     private void setupHandWrite() {
 
-=======
->>>>>>> refs/remotes/origin/master
+
         mWidget.addSearchDir("zip://" + getPackageCodePath() + "!/assets/conf/");
         mWidget.configure("shape", "standard");
         mWidget.setOnEditingListener(this);
@@ -154,35 +144,6 @@ public class HandGeometryActivity extends AbstractAppCompatActivity implements G
                 Log.d(TAG, "onRecognitionEnd: ");
             }
         });
-
-<<<<<<< HEAD
-=======
-        findViewById(R.id.fab_close).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
-
-        mSilde = (SlidingUpPanelLayout) findViewById(R.id.sliding_layout);
-        mSilde.setFadeOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mSilde.setPanelState(SlidingUpPanelLayout.PanelState.COLLAPSED);
-                mWidget.undo(); //???
-            }
-        });
-        mEditText = (EditText) mSilde.findViewById(R.id.edit_value);
-        btnSave = (Button) mSilde.findViewById(R.id.btn_save);
-        txtInfo = (TextView) mSilde.findViewById(R.id.txt_info);
-        btnCancel = (Button) mSilde.findViewById(R.id.btn_cancel);
-        btnCancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                doCancel();
-            }
-        });
->>>>>>> refs/remotes/origin/master
     }
 
     private void doCancel() {

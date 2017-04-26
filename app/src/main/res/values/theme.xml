@@ -29,12 +29,6 @@
     <string name="theme_day_night" translatable="false">DayNight</string>
     <string name="theme_gradient" translatable="false">Gradient</string>
 
-
-
-<<<<<<< HEAD
-=======
-
->>>>>>> refs/remotes/origin/master
     <!-- Dark theme. -->
     <style name="AppTheme.DayNight" parent="Theme.AppCompat.DayNight.NoActionBar">
         <item name="buttonDigitStyle">@style/AppTheme.ButtonDigitStyle.Small</item>
@@ -277,10 +271,6 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-<<<<<<< HEAD
-
-=======
->>>>>>> refs/remotes/origin/master
     <color name="blue_grey_800">#37474f</color>
     <color name="pink_accent_200">#ff4081</color>
     <color name="indigo_accent_200">#FF536DFE</color>

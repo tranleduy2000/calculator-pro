@@ -51,11 +51,7 @@ import com.example.duy.calculator.math_eval.BigEvaluator;
 import com.example.duy.calculator.math_eval.LogicEvaluator;
 import com.example.duy.calculator.math_eval.base.Evaluator;
 import com.example.duy.calculator.ocr.OcrManager;
-<<<<<<< HEAD
 import com.example.duy.calculator.utils.ClipboardManager;
-=======
-import com.example.duy.calculator.utils.MyClipboard;
->>>>>>> refs/remotes/origin/master
 import com.example.duy.calculator.utils.VoiceUtils;
 import com.example.duy.calculator.version_old.activities.abstract_class.AbstractCalculatorActivity;
 import com.example.duy.calculator.view.AnimationFinishedListener;
@@ -610,19 +606,12 @@ public class BasicCalculatorActivity extends AbstractCalculatorActivity
     }
 
     public void copyText() {
-<<<<<<< HEAD
         ClipboardManager.setClipboard(this, mInputDisplay.getCleanText());
     }
 
     public void pasteText() {
         mInputDisplay.setText(ClipboardManager.getClipboard(this));
-=======
-        MyClipboard.setClipboard(this, mInputDisplay.getCleanText());
-    }
 
-    public void pasteText() {
-        mInputDisplay.setText(MyClipboard.getClipboard(this));
->>>>>>> refs/remotes/origin/master
     }
 
     public void shareText() {
@@ -762,10 +751,7 @@ public class BasicCalculatorActivity extends AbstractCalculatorActivity
             Log.d(TAG, "onClick: " + ((TextView) view).getText().toString());
         }
         switch (id) {
-<<<<<<< HEAD
-=======
 
->>>>>>> refs/remotes/origin/master
             case R.id.img_camera:
                 OcrManager ocrManager = new OcrManager();
                 ocrManager.startOcr(this);
@@ -937,34 +923,15 @@ public class BasicCalculatorActivity extends AbstractCalculatorActivity
         switch (requestCode) {
             case REQ_CODE_SPEECH_INPUT:
                 if (resultCode == RESULT_OK && null != data) {
-<<<<<<< HEAD
                     processOutputVoice(data);
                 }
                 break;
-=======
-                    ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-                    Toast.makeText(this, result.get(0), Toast.LENGTH_SHORT).show();
-                    String res = result.get(0);
-                    res = VoiceUtils.replace(res);
-                    final String finalRes = res;
-                    mInputDisplay.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            mInputDisplay.setText(finalRes);
-                        }
-                    });
-                }
-                break;
 
->>>>>>> refs/remotes/origin/master
             case OcrManager.OCR_REQUEST_CODE:
                 OcrManager ocrManager = new OcrManager();
                 ocrManager.processResult(BasicCalculatorActivity.this, resultCode, data);
                 break;
-<<<<<<< HEAD
-=======
 
->>>>>>> refs/remotes/origin/master
             case REQ_CODE_HISTORY:
                 Log.d(TAG, "onActivityResult: history");
                 if (resultCode == RESULT_OK) {
@@ -986,7 +953,6 @@ public class BasicCalculatorActivity extends AbstractCalculatorActivity
         }
     }
 
-<<<<<<< HEAD
     /**
      * out put result text
      *
@@ -1006,8 +972,7 @@ public class BasicCalculatorActivity extends AbstractCalculatorActivity
         });
     }
 
-=======
->>>>>>> refs/remotes/origin/master
+
     private void clickDerivative() {
         String inp = mTokenizer.getNormalExpression(mInputDisplay.getCleanText());
         if (inp.isEmpty()) {
@@ -1022,17 +987,11 @@ public class BasicCalculatorActivity extends AbstractCalculatorActivity
 
     public enum CalculatorState {
         INPUT,
-<<<<<<< HEAD
         EVALUATE, RESULT, ERROR
     }
 
     public enum PagerState {PAGE_SCIENCE, PAGE_NUMBER, PAGE_HISTORY, PAGE_CONSTANT}
-=======
-        EVALUATE, RESULT, ERROR;
-    }
 
-    public static enum PagerState {PAGE_SCIENCE, PAGE_NUMBER, PAGE_HISTORY, PAGE_CONSTANT}
->>>>>>> refs/remotes/origin/master
 
     private class TaskSolve extends AsyncTask<IExprInput, Void, String> {
         @Override

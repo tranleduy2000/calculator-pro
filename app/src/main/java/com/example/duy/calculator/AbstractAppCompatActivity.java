@@ -250,11 +250,6 @@ public abstract class AbstractAppCompatActivity extends AppCompatActivity
         }
     }
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> refs/remotes/origin/master
     protected void hideKeyboard(EditText editText) {
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(editText.getWindowToken(), 0);

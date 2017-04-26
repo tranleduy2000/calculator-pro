@@ -56,11 +56,8 @@
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:textSize="40sp" />
 
-<<<<<<< HEAD
                     <com.example.duy.calculator.view.MathFormulaView
-=======
-                    <io.github.kexanie.library.MathView
->>>>>>> refs/remotes/origin/master
+
                         android:id="@+id/math_view"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"

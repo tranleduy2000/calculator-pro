@@ -44,8 +44,7 @@ import java.util.Iterator;
  *
  * @author dlegland
  */
-public class Polyline2D extends LinearCurve2D
-{
+public class Polyline2D extends LinearCurve2D {
 
     // ===================================================================
     // Static methods
@@ -157,7 +156,6 @@ public class Polyline2D extends LinearCurve2D
             return null;
         return new LineSegment2D(vertices.get(n - 2), vertices.get(n - 1));
     }
-
 
 
     // ===================================================================

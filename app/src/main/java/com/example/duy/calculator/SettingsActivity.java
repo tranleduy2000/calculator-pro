@@ -5,11 +5,11 @@ import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
 /**
-<<<<<<< HEAD
+ * <<<<<<< HEAD
  * Setting for calculator
-=======
+ * =======
  * Setting for calcualtor
->>>>>>> refs/remotes/origin/master
+ * >>>>>>> refs/remotes/origin/master
  * <p>
  * Include precision of calculate. Font, theme, style. Dev mode, trace mode.
  */

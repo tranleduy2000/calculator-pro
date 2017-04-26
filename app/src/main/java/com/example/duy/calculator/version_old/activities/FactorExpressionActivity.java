@@ -143,11 +143,11 @@ public class FactorExpressionActivity extends AbstractEvaluatorActivity {
             final ItemResult[] res = new ItemResult[1];
             BigEvaluator.getInstance(getApplicationContext())
                     .factorPolynomial(item.getInput(), new LogicEvaluator.EvaluateCallback() {
-                @Override
-                public void onEvaluate(String expr, String result, int errorResourceId) {
-                    res[0] = new ItemResult(expr, result, errorResourceId);
-                }
-            });
+                        @Override
+                        public void onEvaluate(String expr, String result, int errorResourceId) {
+                            res[0] = new ItemResult(expr, result, errorResourceId);
+                        }
+                    });
             return res[0];
 //            //task 2
 //            try {

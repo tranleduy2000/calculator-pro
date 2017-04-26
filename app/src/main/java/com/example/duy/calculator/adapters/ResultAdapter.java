@@ -41,27 +41,22 @@ public class ResultAdapter extends RecyclerView.Adapter<ResultAdapter.ResultView
         this.mResults = mResults;
     }
 
-<<<<<<< HEAD
     /**
      * add new result type
      *
      * @param item
      */
-=======
->>>>>>> refs/remotes/origin/master
     public void addItem(HistoryEntry item) {
         mResults.add(0, item);
         notifyItemInserted(0);
     }
 
-<<<<<<< HEAD
     /**
      * remove result item
+     *
      * @param position
      * @return
      */
-=======
->>>>>>> refs/remotes/origin/master
     public boolean removeItem(int position) {
         if (position > mResults.size() - 1) {
             return false;
@@ -71,14 +66,12 @@ public class ResultAdapter extends RecyclerView.Adapter<ResultAdapter.ResultView
         return true;
     }
 
-<<<<<<< HEAD
     /**
      * return list result item
+     *
      * @param position
      * @return
      */
-=======
->>>>>>> refs/remotes/origin/master
     public HistoryEntry getResult(int position) {
         if (position > mResults.size() - 1) {
             return new HistoryEntry("0", "0");
@@ -86,12 +79,9 @@ public class ResultAdapter extends RecyclerView.Adapter<ResultAdapter.ResultView
         return mResults.get(position);
     }
 
-<<<<<<< HEAD
     /**
      * clear adapter
      */
-=======
->>>>>>> refs/remotes/origin/master
     public void clear() {
         int size = mResults.size();
         if (mResults.size() == 1) {
@@ -168,12 +158,9 @@ public class ResultAdapter extends RecyclerView.Adapter<ResultAdapter.ResultView
 
     }
 
-<<<<<<< HEAD
     /**
      * result entry
      */
-=======
->>>>>>> refs/remotes/origin/master
     static class ResultViewHolder extends RecyclerView.ViewHolder {
         MathView txtMath;
         MathView txtResult;

@@ -1,10 +1,10 @@
 package com.example.duy.calculator.data;
 
 /**
-<<<<<<< HEAD
+ * <<<<<<< HEAD
  * Math sample for some functions
-=======
->>>>>>> refs/remotes/origin/master
+ * =======
+ * >>>>>>> refs/remotes/origin/master
  * Created by DUy on 29-Jan-17.
  */
 

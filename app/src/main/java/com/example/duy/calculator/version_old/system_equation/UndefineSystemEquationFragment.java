@@ -25,7 +25,7 @@ import com.example.duy.calculator.math_eval.BigEvaluator;
 import com.example.duy.calculator.math_eval.Constants;
 import com.example.duy.calculator.math_eval.LogicEvaluator;
 import com.example.duy.calculator.utils.ConfigApp;
-import com.example.duy.calculator.version_new_error.AbstractFragment;
+import com.example.duy.calculator.AbstractFragment;
 import com.example.duy.calculator.view.ResizingEditText;
 import com.getkeepsafe.taptargetview.TapTarget;
 import com.getkeepsafe.taptargetview.TapTargetSequence;
@@ -328,7 +328,8 @@ public class UndefineSystemEquationFragment extends AbstractFragment {
             if (!isOk) return "";
             String input = equation.toString();
             Log.d(TAG, input);
-            if (BigEvaluator.getInstance(getActivity()).isSyntaxError(input)) return getString(R.string.error);
+            if (BigEvaluator.getInstance(getActivity()).isSyntaxError(input))
+                return getString(R.string.error);
             final String[] res = {""};
 
             /**

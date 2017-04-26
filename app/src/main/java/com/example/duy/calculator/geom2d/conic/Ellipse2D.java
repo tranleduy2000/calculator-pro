@@ -401,8 +401,8 @@ public class Ellipse2D extends AbstractSmoothCurve2D
                 double rMr = R - rootD;
                 double rPr = R + rootD;
                 tildeT = ((rPr > 0) ? pow(rPr, ot) : -pow(-rPr, ot))
-                                 + ((rMr > 0) ? pow(rMr, ot) : -pow(-rMr, ot))
-                                 - b * ot;
+                        + ((rMr > 0) ? pow(rMr, ot) : -pow(-rMr, ot))
+                        - b * ot;
                 double tildeT2 = tildeT * tildeT;
                 double tildeT2P1 = 1.0 + tildeT2;
                 tildePhi = atan2(z * tildeT2P1 - 2 * k * tildeT,
@@ -421,13 +421,13 @@ public class Ellipse2D extends AbstractSmoothCurve2D
                     tildeT2 = tildeT * tildeT;
                     tildeT2P1 = 1.0 + tildeT2;
                     tildePhi = atan2(z * tildeT2P1 - 2 * k * tildeT, g2
-                                                                             * (r * tildeT2P1 - k * (1.0 - tildeT2)));
+                            * (r * tildeT2P1 - k * (1.0 - tildeT2)));
                     if (tildePhi * phi < 0) {
                         tildeT = 2 * qRoot * cos((alpha + 4 * PI) * ot) - b * ot;
                         tildeT2 = tildeT * tildeT;
                         tildeT2P1 = 1.0 + tildeT2;
                         tildePhi = atan2(z * tildeT2P1 - 2 * k * tildeT, g2
-                                                                                 * (r * tildeT2P1 - k * (1.0 - tildeT2)));
+                                * (r * tildeT2P1 - k * (1.0 - tildeT2)));
                     }
                 }
             }
@@ -618,8 +618,8 @@ public class Ellipse2D extends AbstractSmoothCurve2D
         double d = -yc * b - 2 * xc * a;
         double e = -xc * b - 2 * yc * c;
         double f = -1.0 + (xcSq + ycSq) * (r1SqInv + r2SqInv) / 2.0
-                           + (costSq - sintSq) * (xcSq - ycSq) * (r1SqInv - r2SqInv) / 2.0
-                           + xc * yc * (r1SqInv - r2SqInv) * sin2t;
+                + (costSq - sintSq) * (xcSq - ycSq) * (r1SqInv - r2SqInv) / 2.0
+                + xc * yc * (r1SqInv - r2SqInv) * sin2t;
 
         // Return array of results
         return new double[]{a, b, c, d, e, f};
@@ -694,12 +694,12 @@ public class Ellipse2D extends AbstractSmoothCurve2D
 
         if (direct)
             return new Vector2D(
-                                       -r1 * sin(t) * cot - r2 * cos(t) * sit,
-                                       -r1 * sin(t) * sit + r2 * cos(t) * cot);
+                    -r1 * sin(t) * cot - r2 * cos(t) * sit,
+                    -r1 * sin(t) * sit + r2 * cos(t) * cot);
         else
             return new Vector2D(
-                                       r1 * sin(t) * cot + r2 * cos(t) * sit,
-                                       r1 * sin(t) * sit - r2 * cos(t) * cot);
+                    r1 * sin(t) * cot + r2 * cos(t) * sit,
+                    r1 * sin(t) * sit - r2 * cos(t) * cot);
     }
 
     /**
@@ -797,8 +797,8 @@ public class Ellipse2D extends AbstractSmoothCurve2D
         double cot = cos(theta);
         double sit = sin(theta);
         return new Point2D(
-                                  xc + r1 * cos(t) * cot - r2 * sin(t) * sit,
-                                  yc + r1 * cos(t) * sit + r2 * sin(t) * cot);
+                xc + r1 * cos(t) * cot - r2 * sin(t) * sit,
+                yc + r1 * cos(t) * sit + r2 * sin(t) * cot);
     }
 
     /**

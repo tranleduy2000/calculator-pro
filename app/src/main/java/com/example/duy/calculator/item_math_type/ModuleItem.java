@@ -50,6 +50,7 @@ public class ModuleItem extends IExprInput {
         return Constants.MODULE + Constants.LEFT_PAREN + this.num1 + "," + this.num2
                 + Constants.RIGHT_PAREN;
     }
+
     @Override
     public String getError(BigEvaluator evaluator, Context applicationContext) {
         return null;

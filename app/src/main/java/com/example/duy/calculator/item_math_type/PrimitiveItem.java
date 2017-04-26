@@ -12,14 +12,9 @@ import com.example.duy.calculator.math_eval.FormatExpression;
  */
 
 public class PrimitiveItem extends IExprInput {
-    @Override
-    public String getError(BigEvaluator evaluator, Context applicationContext) {
-        return null;
-    }
     private static final String TAG = "PrimitiveItem";
     private String input;
     private String var = "x";
-
     public PrimitiveItem(String input, String var) {
         this.input = FormatExpression.appendParenthesis(input);
         this.var = var;
@@ -27,6 +22,11 @@ public class PrimitiveItem extends IExprInput {
 
     public PrimitiveItem(String input) {
         this.input = FormatExpression.appendParenthesis(input);
+    }
+
+    @Override
+    public String getError(BigEvaluator evaluator, Context applicationContext) {
+        return null;
     }
 
     public String getVar() {

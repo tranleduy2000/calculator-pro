@@ -16,11 +16,7 @@ import com.myscript.atk.math.widget.MathWidgetApi;
 public class HandWriteManager {
     public static boolean initHandWrite(MathWidgetApi widget,
                                         Activity context,
-<<<<<<< HEAD
                                         CalcHandWriteCallback mCallback,
-=======
-                                        HandWriteCallback mCallback,
->>>>>>> refs/remotes/origin/master
                                         boolean autoEval) {
         //    mContainerGesture = (LinearLayout) findViewById(R.id.container_gesture);
         boolean success = widget.registerCertificate(MyCertificate.getBytes());
@@ -60,7 +56,7 @@ public class HandWriteManager {
         } else {
             widget.setBeautificationOption(MathWidgetApi.RecognitionBeautification.BeautifyFontifyAndSolve);
         }
-         widget.setPaddingRatio(0.5f, .5f, .5f, 0.5f);
+        widget.setPaddingRatio(0.5f, .5f, .5f, 0.5f);
         return true;
     }
 

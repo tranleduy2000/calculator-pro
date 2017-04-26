@@ -13,6 +13,7 @@ import com.example.duy.calculator.math_eval.FormatExpression;
 public class FunctionItem extends IExprInput {
     private String leftExpr = "y";
     private String rightExpr = "";
+
     public FunctionItem(String rightExpr) {
         this.rightExpr = FormatExpression.appendParenthesis(rightExpr);
     }

@@ -2,6 +2,8 @@ package com.example.duy.calculator.utils;
 
 import java.util.ArrayList;
 
+import static org.apache.commons.math4.util.MathArrays.Position.HEAD;
+
 /**
  * Created by edoga on 28-Oct-16.
  */
@@ -35,11 +37,8 @@ public class VoiceUtils {
         mReplace.add(new ItemReplace("mũ", "^"));
         mReplace.add(new ItemReplace("mủ", "^"));
         mReplace.add(new ItemReplace("giai thừa", "!"));
-<<<<<<< HEAD
         mReplace.add(new ItemReplace("mở ngoặc", "("));
         mReplace.add(new ItemReplace("đóng ngoặc", ")"));
-=======
->>>>>>> refs/remotes/origin/master
     }
 
     public static String replace(String res) {

@@ -10,13 +10,13 @@ import com.example.duy.calculator.R;
 public class PowerStrategy implements Strategy {
     private Context context;
 
+    public PowerStrategy(Context context) {
+        this.context = context;
+    }
+
     @Override
     public String getUnitDefault() {
         return context.getResources().getString(R.string.powerunithorsepower);
-    }
-
-    public PowerStrategy(Context context) {
-        this.context = context;
     }
 
     public double Convert(String from, String to, double input) {

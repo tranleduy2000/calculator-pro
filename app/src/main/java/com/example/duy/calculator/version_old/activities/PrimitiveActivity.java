@@ -137,7 +137,6 @@ public class PrimitiveActivity extends AbstractEvaluatorActivity {
     }
 
 
-
     /**
      * task for evaluate anti derivative
      */

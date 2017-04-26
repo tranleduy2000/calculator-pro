@@ -9,10 +9,12 @@ public abstract class AnimationFinishedListener implements Animator.AnimatorList
     }
 
     @Override
-    public void onAnimationRepeat(Animator animation) {}
+    public void onAnimationRepeat(Animator animation) {
+    }
 
     @Override
-    public void onAnimationStart(Animator animation) {}
+    public void onAnimationStart(Animator animation) {
+    }
 
     @Override
     public void onAnimationEnd(Animator animation) {

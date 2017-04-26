@@ -62,7 +62,6 @@ public class UnitConverterChildActivity extends AbstractAppCompatActivity {
     }
 
 
-
     private void setUpSpinnerAndStratery(int pos) {
         arrUnit = new String[]{};
         switch (pos) {

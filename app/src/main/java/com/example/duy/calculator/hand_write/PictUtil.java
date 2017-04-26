@@ -10,7 +10,6 @@ import java.io.FileOutputStream;
 
 import static android.content.ContentValues.TAG;
 
-<<<<<<< HEAD
 /**
  * picture util
  */
@@ -18,9 +17,7 @@ public class PictUtil {
     /**
      * @return path of application
      */
-=======
-class PictUtil {
->>>>>>> refs/remotes/origin/master
+
     public static File getSavePath() {
         File path;
         if (hasSDCard()) { // SD card
@@ -32,26 +29,19 @@ class PictUtil {
         return path;
     }
 
-<<<<<<< HEAD
     /**
      * @return cache path
      */
-=======
->>>>>>> refs/remotes/origin/master
     public static String getCacheFilename() {
         File f = getSavePath();
         return f.getAbsolutePath() + "/cache.png";
     }
 
-<<<<<<< HEAD
     /**
      * load bitmap
      *
      * @param filename - path of file
-     * @return Bitmap
      */
-=======
->>>>>>> refs/remotes/origin/master
     public static Bitmap loadFromFile(String filename) {
         try {
             File f = new File(filename);
@@ -78,18 +68,14 @@ class PictUtil {
         return status.equals(Environment.MEDIA_MOUNTED);
     }
 
-<<<<<<< HEAD
     /**
      * @return sd path
      */
-=======
->>>>>>> refs/remotes/origin/master
     public static String getSDCardPath() {
         File path = Environment.getExternalStorageDirectory();
         return path.getAbsolutePath();
     }
 
-<<<<<<< HEAD
     /**
      * save file
      *
@@ -97,8 +83,6 @@ class PictUtil {
      * @param bmp      - bitmap file
      * @return <code>true</code> if success, otherwise <code>false</code>
      */
-=======
->>>>>>> refs/remotes/origin/master
     public static boolean saveToFile(String filename, Bitmap bmp) {
         FileOutputStream out = null;
         try {

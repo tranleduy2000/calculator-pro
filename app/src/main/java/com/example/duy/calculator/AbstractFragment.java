@@ -1,4 +1,4 @@
-package com.example.duy.calculator.version_new_error;
+package com.example.duy.calculator;
 
 import android.animation.Animator;
 import android.app.Activity;
@@ -21,8 +21,6 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.duy.calculator.DLog;
-import com.example.duy.calculator.R;
 import com.example.duy.calculator.data.CalculatorSetting;
 import com.example.duy.calculator.data.Database;
 import com.example.duy.calculator.math_eval.BigEvaluator;

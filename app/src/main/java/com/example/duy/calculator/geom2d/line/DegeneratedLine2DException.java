@@ -1,9 +1,9 @@
 /**
  * File: 	DegeneratedLine2DException.java
  * Project: javaGeom
- * 
+ * <p>
  * Distributed under the LGPL License.
- *
+ * <p>
  * Created: 19 ao�t 2010
  */
 package com.example.duy.calculator.geom2d.line;
@@ -19,31 +19,31 @@ package com.example.duy.calculator.geom2d.line;
  */
 public class DegeneratedLine2DException extends RuntimeException {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
 
-	protected LinearShape2D line;
-	
-	/**
-	 * @param msg the error message
-	 * @param line the degenerated line
-	 */
-	public DegeneratedLine2DException(String msg, LinearShape2D line) {
-		super(msg);
-		this.line = line;
-	}
-	
-	/**
-	 * @param line the degenerated line
-	 */
-	public DegeneratedLine2DException(LinearShape2D line) {
-		super();
-		this.line = line;
-	}
+    protected LinearShape2D line;
 
-	public LinearShape2D getLine() {
-		return line;
-	}
+    /**
+     * @param msg the error message
+     * @param line the degenerated line
+     */
+    public DegeneratedLine2DException(String msg, LinearShape2D line) {
+        super(msg);
+        this.line = line;
+    }
+
+    /**
+     * @param line the degenerated line
+     */
+    public DegeneratedLine2DException(LinearShape2D line) {
+        super();
+        this.line = line;
+    }
+
+    public LinearShape2D getLine() {
+        return line;
+    }
 }

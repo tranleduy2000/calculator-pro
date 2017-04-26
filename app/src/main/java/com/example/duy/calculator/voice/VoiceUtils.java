@@ -1,11 +1,8 @@
 package com.example.duy.calculator.voice;
 
-<<<<<<< HEAD
 import android.content.Context;
 
 import java.io.InputStream;
-=======
->>>>>>> refs/remotes/origin/master
 import java.util.ArrayList;
 
 /**
@@ -14,7 +11,6 @@ import java.util.ArrayList;
  */
 
 public class VoiceUtils {
-<<<<<<< HEAD
     private ArrayList<ItemReplace> mReplace = new ArrayList<>();
     private Context context;
 
@@ -33,11 +29,6 @@ public class VoiceUtils {
     }
 
     public void init(InputStream is) {
-=======
-    private static ArrayList<ItemReplace> mReplace = new ArrayList<>();
-
-    public static void init() {
->>>>>>> refs/remotes/origin/master
         mReplace.clear();
         mReplace.add(new ItemReplace("không", "0"));
         mReplace.add(new ItemReplace("một", "1"));
@@ -72,7 +63,6 @@ public class VoiceUtils {
         mReplace.add(new ItemReplace("căn bậc 2", "sqrt("));
         mReplace.add(new ItemReplace("căn bậc 3", "cbrt("));
         mReplace.add(new ItemReplace("căn bậc ba", "cbrt("));
-<<<<<<< HEAD
         mReplace.add(new ItemReplace("căn", "sqrt("));
         mReplace.add(new ItemReplace("đóng ngoặc", ")"));
         mReplace.add(new ItemReplace("mở ngoặc", "("));
@@ -113,56 +103,11 @@ public class VoiceUtils {
     }
 
     public String toString(String math) {
-=======
-    }
-
-    public static String replace(String res) {
-        init();
-        //to lower case input
-        res = res.toLowerCase();
-        //replace text to number and operator
-        for (int i = 0; i < mReplace.size(); i++) {
-            res = res.replace(mReplace.get(i).getText(), mReplace.get(i).getMath());
-        }
-        return res;
-    }
-
-    public String toString(String math) {
-        init();
->>>>>>> refs/remotes/origin/master
         for (int i = 0; i < mReplace.size(); i++) {
             math = math.replace(mReplace.get(i).getMath(), mReplace.get(i).getText());
         }
         return math;
     }
 
-<<<<<<< HEAD
 
-=======
-    private static class ItemReplace {
-        private String text;
-        private String math;
-
-        ItemReplace(String text, String math) {
-            this.text = text;
-            this.math = math;
-        }
-
-        String getText() {
-            return text;
-        }
-
-        public void setText(String text) {
-            this.text = text;
-        }
-
-        String getMath() {
-            return math;
-        }
-
-        public void setMath(String math) {
-            this.math = math;
-        }
-    }
->>>>>>> refs/remotes/origin/master
 }

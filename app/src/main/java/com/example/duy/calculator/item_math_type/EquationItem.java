@@ -60,9 +60,9 @@ public class EquationItem extends IExprInput {
 
     @Override
     public boolean isError(BigEvaluator evaluator) {
-        if (evaluator.isSyntaxError(left)){
+        if (evaluator.isSyntaxError(left)) {
             return true;
-        } else if (evaluator.isSyntaxError(right)){
+        } else if (evaluator.isSyntaxError(right)) {
             return true;
         }
         return false;

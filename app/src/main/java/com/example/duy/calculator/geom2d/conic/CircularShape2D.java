@@ -1,13 +1,12 @@
 /**
  * File: 	CircularShape2D.java
  * Project: javaGeom
- * 
+ * <p>
  * Distributed under the LGPL License.
- *
+ * <p>
  * Created: 17 mai 09
  */
 package com.example.duy.calculator.geom2d.conic;
-
 
 
 /**
@@ -15,7 +14,7 @@ package com.example.duy.calculator.geom2d.conic;
  * @author dlegland
  *
  */
-public interface CircularShape2D  {
-	public Circle2D supportingCircle();
+public interface CircularShape2D {
+    public Circle2D supportingCircle();
 
 }

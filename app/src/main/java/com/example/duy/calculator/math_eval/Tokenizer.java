@@ -23,14 +23,11 @@ public class Tokenizer {
         mReplacements = new ArrayList<>();
     }
 
-<<<<<<< HEAD
     /**
      * init list key word
      *
      * @param context
      */
-=======
->>>>>>> refs/remotes/origin/master
     private void generateReplacements(Context context) {
         mReplacements.clear();
         mReplacements.add(new Localize("/", context.getString(R.string.div)));
@@ -76,6 +73,7 @@ public class Tokenizer {
 
     /**
      * translate to english
+     *
      * @param expr - local language
      * @return - english
      */
@@ -89,6 +87,7 @@ public class Tokenizer {
 
     /**
      * translate to local language
+     *
      * @param expr - english
      * @return - local language
      */

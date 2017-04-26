@@ -12,13 +12,8 @@ import android.view.View;
 
 import com.example.duy.calculator.AbstractAppCompatActivity;
 import com.example.duy.calculator.R;
-<<<<<<< HEAD
 import com.example.duy.calculator.utils.ClipboardManager;
 import com.example.duy.calculator.utils.FileUtils;
-=======
-import com.example.duy.calculator.utils.FileUtils;
-import com.example.duy.calculator.utils.MyClipboard;
->>>>>>> refs/remotes/origin/master
 import com.example.duy.calculator.version_old.activities.BasicCalculatorActivity;
 import com.myscript.atk.core.CaptureInfo;
 import com.myscript.atk.math.widget.MathWidgetApi;
@@ -51,11 +46,7 @@ public class HandCalculatorActivity extends AbstractAppCompatActivity {
 
         widget = (MathWidgetApi) findViewById(com.example.duy.calculator.R.id.math_widget);
         boolean success = HandWriteManager.initHandWrite(widget,
-<<<<<<< HEAD
                 this, new CalcHandWriteCallback(), true);
-=======
-                this, new HandWriteCallback(), true);
->>>>>>> refs/remotes/origin/master
         if (!success) {
             AlertDialog.Builder dlgAlert = new AlertDialog.Builder(this);
             dlgAlert.setMessage("Lỗi");
@@ -142,11 +133,7 @@ public class HandCalculatorActivity extends AbstractAppCompatActivity {
         String out;
         String filename;
         FileUtils fileUtils = new FileUtils(this);
-<<<<<<< HEAD
         ClipboardManager myClipboard = new ClipboardManager();
-=======
-        MyClipboard myClipboard = new MyClipboard();
->>>>>>> refs/remotes/origin/master
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.clear:
@@ -175,7 +162,6 @@ public class HandCalculatorActivity extends AbstractAppCompatActivity {
                 return true;
             case R.id.copy_as_text:
                 out = widget.getResultAsText();
-<<<<<<< HEAD
                 ClipboardManager.setClipboard(this, out);
                 return true;
             case R.id.copy_as_latex:
@@ -185,17 +171,7 @@ public class HandCalculatorActivity extends AbstractAppCompatActivity {
             case R.id.copy_as_mathml:
                 out = widget.getResultAsMathML();
                 ClipboardManager.setClipboard(this, out);
-=======
-                myClipboard.setClipboard(this, out);
-                return true;
-            case R.id.copy_as_latex:
-                out = widget.getResultAsLaTeX();
-                myClipboard.setClipboard(this, out);
-                return true;
-            case R.id.copy_as_mathml:
-                out = widget.getResultAsMathML();
-                myClipboard.setClipboard(this, out);
->>>>>>> refs/remotes/origin/master
+
                 return true;
             case R.id.info:
                 showDialogHelp();
@@ -205,12 +181,9 @@ public class HandCalculatorActivity extends AbstractAppCompatActivity {
         }
     }
 
-<<<<<<< HEAD
     /**
      * show alert dialog "how to use"
      */
-=======
->>>>>>> refs/remotes/origin/master
     private void showDialogHelp() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage(R.string.hand_write_help)

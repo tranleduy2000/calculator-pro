@@ -225,13 +225,15 @@ public abstract class AbstractNavDrawerActionBarActivity extends AbstractAppComp
                 break;
             case R.id.nav_fibo:
                 intent = new Intent(this, NumberActivity.class);
-                intent.putExtra(NumberActivity.DATA, NumberType.FIBONACCI);                intent.putExtra(NumberActivity.TAG, NumberActivity.TAG);
+                intent.putExtra(NumberActivity.DATA, NumberType.FIBONACCI);
+                intent.putExtra(NumberActivity.TAG, NumberActivity.TAG);
 
                 startIntent(intent);
                 break;
             case R.id.nav_prime:
                 intent = new Intent(this, NumberActivity.class);
-                intent.putExtra(NumberActivity.DATA, NumberType.PRIME);                intent.putExtra(NumberActivity.TAG, NumberActivity.TAG);
+                intent.putExtra(NumberActivity.DATA, NumberType.PRIME);
+                intent.putExtra(NumberActivity.TAG, NumberActivity.TAG);
 
                 startIntent(intent);
                 break;

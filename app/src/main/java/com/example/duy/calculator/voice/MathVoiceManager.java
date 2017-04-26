@@ -9,19 +9,17 @@ import net.gotev.speech.SpeechDelegate;
 import net.gotev.speech.SpeechRecognitionNotAvailable;
 import net.gotev.speech.ui.SpeechProgressView;
 
-<<<<<<< HEAD
 import java.io.IOException;
-=======
->>>>>>> refs/remotes/origin/master
 import java.util.List;
 import java.util.Locale;
+
+import static org.apache.commons.math4.util.MathArrays.Position.HEAD;
 
 /**
  * Created by DUy on 12-Jan-17.
  */
 
 public class MathVoiceManager implements SpeechDelegate {
-<<<<<<< HEAD
     private Context context;
     private MathVoiceCallback callback = null;
     private VoiceUtils mVoiceUtils;
@@ -34,9 +32,7 @@ public class MathVoiceManager implements SpeechDelegate {
             e.printStackTrace();
         }
     }
-=======
-    private MathVoiceCallback callback = null;
->>>>>>> refs/remotes/origin/master
+
 
     /**
      * setup voice
@@ -108,11 +104,8 @@ public class MathVoiceManager implements SpeechDelegate {
         if (callback == null) return;
         String finalResult = "";
         for (String partial : results) {
-<<<<<<< HEAD
             finalResult += (mVoiceUtils != null) ? mVoiceUtils.replace(partial) : partial;
-=======
-            finalResult += VoiceUtils.replace(partial) + " ";
->>>>>>> refs/remotes/origin/master
+
         }
         callback.onSpeechPartialResults(results, finalResult);
     }
@@ -120,16 +113,12 @@ public class MathVoiceManager implements SpeechDelegate {
     @Override
     public void onSpeechResult(String result) {
         if (callback != null) {
-<<<<<<< HEAD
             if (mVoiceUtils == null) {
                 callback.onSpeechResult(result);
                 return;
             }
             callback.onSpeechResult(mVoiceUtils.replace(result));
-=======
-            callback.onSpeechResult(VoiceUtils.replace(result));
 
->>>>>>> refs/remotes/origin/master
         }
     }
 
