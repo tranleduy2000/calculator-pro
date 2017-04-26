@@ -3,10 +3,15 @@ package com.example.duy.calculator.utils;
 import com.example.duy.calculator.BuildConfig;
 
 /**
+<<<<<<< HEAD
  * Uses {@link BuildConfig} instead of this class
  * Created by DUy on 28-Nov-16.
  */
 @Deprecated
+=======
+ * Created by DUy on 28-Nov-16.
+ */
+>>>>>>> refs/remotes/origin/master
 public class ConfigApp {
     public static final boolean DEBUG = false;
     public static final int VERSION_CODE = BuildConfig.VERSION_CODE;

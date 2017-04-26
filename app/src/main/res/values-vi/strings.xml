@@ -684,7 +684,11 @@ Ví dụ như 2x + 1, 2x^2-x-1
     <string name="undo">Undo</string>
 
     <string name="latex_summary">KaTeX là nhanh hơn so với MathJax trên môi trường di động, nhưng MathJax hỗ trợ nhiều tính năng hơn và đẹp hơn rất nhiều.</string>
+<<<<<<< HEAD
     <string name="action_settings">Cài đặt</string>
+=======
+    <string name="action_settings">Settings</string>
+>>>>>>> refs/remotes/origin/master
     <string name="latex_engine">LaTeX engine</string>
     <string name="tit_trig_expand">Phân tích hàm lượng giác</string>
     <string name="tit_trig_reduce">Thu gọn hàm lượng giác</string>

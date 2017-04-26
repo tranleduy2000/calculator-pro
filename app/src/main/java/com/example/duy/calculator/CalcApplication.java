@@ -11,7 +11,11 @@ public class CalcApplication extends MultiDexApplication {
     public void onCreate() {
         super.onCreate();
         //init font from asset file
+<<<<<<< HEAD
         FontManager.getInstance(this);
+=======
+        FontManager.loadTypefaceFromAsset(this);
+>>>>>>> refs/remotes/origin/master
 
         MathVoiceManager.initVoice(this, getPackageName());
     }

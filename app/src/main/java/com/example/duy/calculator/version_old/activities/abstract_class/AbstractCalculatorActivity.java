@@ -12,7 +12,10 @@ import android.widget.Toast;
 import com.example.duy.calculator.ICalculator;
 import com.example.duy.calculator.R;
 import com.example.duy.calculator.math_eval.BigEvaluator;
+<<<<<<< HEAD
 import com.example.duy.calculator.math_eval.DecimalFactory;
+=======
+>>>>>>> refs/remotes/origin/master
 import com.example.duy.calculator.math_eval.Tokenizer;
 import com.example.duy.calculator.utils.ConfigApp;
 import com.example.duy.calculator.voice.MathVoiceManager;
@@ -31,10 +34,17 @@ import rx.functions.Action1;
  */
 public abstract class AbstractCalculatorActivity extends AbstractNavDrawerActionBarActivity implements
         SharedPreferences.OnSharedPreferenceChangeListener, ICalculator, MathVoiceManager.MathVoiceCallback {
+<<<<<<< HEAD
     public Tokenizer mTokenizer;
     protected SpeechProgressView speechProgress;
     private boolean debug = ConfigApp.DEBUG;
     private MathVoiceManager mMathVoiceManager;
+=======
+    protected SpeechProgressView speechProgress;
+    private boolean debug = ConfigApp.DEBUG;
+    private MathVoiceManager mathVoiceManager;
+    public Tokenizer mTokenizer;
+>>>>>>> refs/remotes/origin/master
 
     /**
      * insert text to display - not clear screen
@@ -68,8 +78,13 @@ public abstract class AbstractCalculatorActivity extends AbstractNavDrawerAction
         //define variable
         mTokenizer = new Tokenizer(this);
 
+<<<<<<< HEAD
         mMathVoiceManager = new MathVoiceManager(this);
         mMathVoiceManager.setCallback(this);
+=======
+        mathVoiceManager = new MathVoiceManager();
+        mathVoiceManager.setCallback(this);
+>>>>>>> refs/remotes/origin/master
     }
 
     /**
@@ -111,9 +126,12 @@ public abstract class AbstractCalculatorActivity extends AbstractNavDrawerAction
         speechProgress.setColors(colors);
     }
 
+<<<<<<< HEAD
     /**
      * check permission android record audio
      */
+=======
+>>>>>>> refs/remotes/origin/master
     protected void startVoiceInput() {
         if (MathVoiceManager.isRunning()) {
             MathVoiceManager.stop();
@@ -134,9 +152,12 @@ public abstract class AbstractCalculatorActivity extends AbstractNavDrawerAction
         }
     }
 
+<<<<<<< HEAD
     /**
      * start google voice
      */
+=======
+>>>>>>> refs/remotes/origin/master
     private void onRecordAudioPermissionGranted() {
         speechProgress = (SpeechProgressView) findViewById(R.id.speech_progress);
         if (speechProgress == null) {
@@ -144,15 +165,23 @@ public abstract class AbstractCalculatorActivity extends AbstractNavDrawerAction
             return;
         }
         speechProgress.setVisibility(View.VISIBLE);
+<<<<<<< HEAD
         mMathVoiceManager.startInput(speechProgress);
+=======
+        mathVoiceManager.startInput(speechProgress);
+>>>>>>> refs/remotes/origin/master
     }
 
     @Override
     public void onSpeechResult(String result) {
         setTextDisplay(result);
         if (!BigEvaluator.getInstance(this).isSyntaxError(result)) {
+<<<<<<< HEAD
             String res = processResult(result);
             MathVoiceManager.Say(res);
+=======
+            MathVoiceManager.Say(result);
+>>>>>>> refs/remotes/origin/master
         }
         if (speechProgress != null)
             speechProgress.post(new Runnable() {
@@ -163,6 +192,7 @@ public abstract class AbstractCalculatorActivity extends AbstractNavDrawerAction
             });
     }
 
+<<<<<<< HEAD
     /**
      * convert result for "speech"
      *
@@ -183,6 +213,8 @@ public abstract class AbstractCalculatorActivity extends AbstractNavDrawerAction
         }
     }
 
+=======
+>>>>>>> refs/remotes/origin/master
     @Override
     public void onSpeechPartialResults(List<String> results, String finalResult) {
         setTextDisplay(finalResult);

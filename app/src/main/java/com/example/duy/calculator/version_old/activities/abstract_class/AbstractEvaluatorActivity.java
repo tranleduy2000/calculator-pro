@@ -4,6 +4,10 @@ import android.animation.Animator;
 import android.animation.ObjectAnimator;
 import android.annotation.TargetApi;
 import android.content.DialogInterface;
+<<<<<<< HEAD
+=======
+import android.content.Intent;
+>>>>>>> refs/remotes/origin/master
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -30,7 +34,11 @@ import android.widget.Toast;
 
 import com.example.duy.calculator.R;
 import com.example.duy.calculator.adapters.ResultAdapter;
+<<<<<<< HEAD
 import com.example.duy.calculator.hand_write.CalcHandWriteCallback;
+=======
+import com.example.duy.calculator.hand_write.HandWriteCallback;
+>>>>>>> refs/remotes/origin/master
 import com.example.duy.calculator.hand_write.HandWriteManager;
 import com.example.duy.calculator.history.HistoryEntry;
 import com.example.duy.calculator.item_math_type.IExprInput;
@@ -111,7 +119,11 @@ public abstract class AbstractEvaluatorActivity extends AbstractNavDrawerActionB
     private MathWidget mMathWidget; //math widget
     private SlidingUpPanelLayout mSlidingUpPanel; //slide for scroll mathWidget
     private FloatingActionButton btnHelp; //
+<<<<<<< HEAD
     private CalcHandWriteCallback mCallback; //hand write callback
+=======
+    private HandWriteCallback mCallback; //hand write callback
+>>>>>>> refs/remotes/origin/master
     private ResultAdapter resultAdapter;
 
     @Override
@@ -390,7 +402,11 @@ public abstract class AbstractEvaluatorActivity extends AbstractNavDrawerActionB
         mSlidingUpPanel = (SlidingUpPanelLayout) findViewById(R.id.sliding_layout);
 
         mMathWidget = (MathWidget) mSlidingUpPanel.findViewById(R.id.hand_pad);
+<<<<<<< HEAD
         mCallback = new CalcHandWriteCallback();
+=======
+        mCallback = new HandWriteCallback();
+>>>>>>> refs/remotes/origin/master
 
         boolean success = HandWriteManager.initHandWrite(mMathWidget, this, mCallback, false);
         if (!success) {

@@ -3,8 +3,11 @@ package com.example.duy.calculator.view;
 import com.example.duy.calculator.R;
 
 /**
+<<<<<<< HEAD
  *
  *
+=======
+>>>>>>> refs/remotes/origin/master
  * Created by DUy on 15-Jan-17.
  */
 

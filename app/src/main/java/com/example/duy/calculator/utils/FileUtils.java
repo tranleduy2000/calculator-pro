@@ -7,7 +7,10 @@ import android.widget.Toast;
 import java.io.FileOutputStream;
 
 /**
+<<<<<<< HEAD
  * File manager
+=======
+>>>>>>> refs/remotes/origin/master
  * Created by DUy on 04-Nov-16.
  */
 
@@ -18,6 +21,7 @@ public class FileUtils {
         this.context = context;
     }
 
+<<<<<<< HEAD
     /* Checks if external storage is available for read and write */
     public static boolean isExternalStorageWritable() {
         String state = Environment.getExternalStorageState();
@@ -38,6 +42,8 @@ public class FileUtils {
      * @param data     - string content
      * @return - <code>true</code> if success, otherwise <code>false</code>
      */
+=======
+>>>>>>> refs/remotes/origin/master
     public boolean save(String fileName, String data) {
         FileOutputStream outputStream;
         try {
@@ -51,4 +57,26 @@ public class FileUtils {
         }
         return false;
     }
+<<<<<<< HEAD
+=======
+
+    /* Checks if external storage is available for read and write */
+    public static boolean isExternalStorageWritable() {
+        String state = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED.equals(state)) {
+            return true;
+        }
+        return false;
+    }
+
+    /* Checks if external storage is available to at least read */
+    public static boolean isExternalStorageReadable() {
+        String state = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED.equals(state) ||
+                Environment.MEDIA_MOUNTED_READ_ONLY.equals(state)) {
+            return true;
+        }
+        return false;
+    }
+>>>>>>> refs/remotes/origin/master
 }

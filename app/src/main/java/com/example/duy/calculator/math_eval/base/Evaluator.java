@@ -9,7 +9,11 @@ import org.javia.arity.Symbols;
 import org.javia.arity.SyntaxException;
 
 /**
+<<<<<<< HEAD
  * Calculate some basic expression
+=======
+ * thực hiện việc tính toán các biểu thức
+>>>>>>> refs/remotes/origin/master
  * <p/>
  * Create by duy on 30/7/2016
  */

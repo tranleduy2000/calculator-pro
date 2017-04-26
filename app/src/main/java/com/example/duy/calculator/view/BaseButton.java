@@ -33,7 +33,11 @@ public class BaseButton extends Button {
     }
 
     private void setup(Context context) {
+<<<<<<< HEAD
         setTypeface(FontManager.getInstance(context));
+=======
+        setTypeface(FontManager.loadTypefaceFromAsset(context));
+>>>>>>> refs/remotes/origin/master
 
         String text = getText().toString();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {

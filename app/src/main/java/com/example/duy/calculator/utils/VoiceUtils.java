@@ -35,8 +35,11 @@ public class VoiceUtils {
         mReplace.add(new ItemReplace("mũ", "^"));
         mReplace.add(new ItemReplace("mủ", "^"));
         mReplace.add(new ItemReplace("giai thừa", "!"));
+<<<<<<< HEAD
         mReplace.add(new ItemReplace("mở ngoặc", "("));
         mReplace.add(new ItemReplace("đóng ngoặc", ")"));
+=======
+>>>>>>> refs/remotes/origin/master
     }
 
     public static String replace(String res) {

@@ -22,8 +22,14 @@ import com.microblink.results.ocr.OcrFont;
 
 public class OcrManager {
     public static final String LICENSE_KEY =
+<<<<<<< HEAD
             "RNBZFAGX-EIC7T267-7J4WY745-24TEPSGX-EZD4RVZG-I7ENOJSH-ZDLSNZ25-QSC3ZLUW";
     public static final int OCR_REQUEST_CODE = 12321;
+=======
+            "FKKMKKER-NKQZGP7M-VJQAJZDL-3GAC25MO-SM72YWVB-QT46XHYU-XT6EBXEE-6GWYJVZF";
+
+    public static final int OCR_REQUEST_CODE = 2001;
+>>>>>>> refs/remotes/origin/master
     private static final String TAG = OcrManager.class.getSimpleName();
 
     /**
@@ -32,6 +38,10 @@ public class OcrManager {
      * @return - config
      */
     public static ScanConfiguration createScanConfigurations() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/origin/master
         RawParserSettings parserSettings = new RawParserSettings();
         parserSettings.setUseSieve(true);
 
@@ -40,8 +50,11 @@ public class OcrManager {
         ocrEngineOptions.setImageProcessingEnabled(true);
         ocrEngineOptions
                 .addAllDigitsToWhitelist(OcrFont.OCR_FONT_ANY)
+<<<<<<< HEAD
                 .addUppercaseCharsToWhitelist(OcrFont.OCR_FONT_ANY)
                 .addLowercaseCharsToWhitelist(OcrFont.OCR_FONT_ANY)
+=======
+>>>>>>> refs/remotes/origin/master
                 .addCharToWhitelist('0', OcrFont.OCR_FONT_ANY)
                 .addCharToWhitelist('+', OcrFont.OCR_FONT_ANY)
                 .addCharToWhitelist('-', OcrFont.OCR_FONT_ANY)
@@ -53,6 +66,17 @@ public class OcrManager {
                 .addCharToWhitelist('(', OcrFont.OCR_FONT_ANY)
                 .addCharToWhitelist(')', OcrFont.OCR_FONT_ANY)
                 //sin, cos, tan
+<<<<<<< HEAD
+=======
+//                .addCharToWhitelist('e', OcrFont.OCR_FONT_ANY)
+//                .addCharToWhitelist('c', OcrFont.OCR_FONT_ANY)
+//                .addCharToWhitelist('o', OcrFont.OCR_FONT_ANY)
+//                .addCharToWhitelist('s', OcrFont.OCR_FONT_ANY)
+//                .addCharToWhitelist('i', OcrFont.OCR_FONT_ANY)
+//                .addCharToWhitelist('n', OcrFont.OCR_FONT_ANY)
+//                .addCharToWhitelist('t', OcrFont.OCR_FONT_ANY)
+//                .addCharToWhitelist('a', OcrFont.OCR_FONT_ANY)
+>>>>>>> refs/remotes/origin/master
                 .addCharToWhitelist('%', OcrFont.OCR_FONT_ANY)
                 .addCharToWhitelist('=', OcrFont.OCR_FONT_ANY);
         parserSettings.setOcrEngineOptions(ocrEngineOptions);

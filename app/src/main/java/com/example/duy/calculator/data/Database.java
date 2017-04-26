@@ -14,11 +14,18 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
+<<<<<<< HEAD
  * SQ lite database for calc
  * include history, variable, ...
  * Created by Duy on 3/7/2016
  */
 public class Database extends SQLiteOpenHelper implements Serializable {
+=======
+ * Created by Duy on 3/7/2016
+ */
+public class Database extends SQLiteOpenHelper implements Serializable {
+    static final long serialVersionUID = 2L;
+>>>>>>> refs/remotes/origin/master
     private static final String DATABASE_NAME = "history_manager";
     private static final int DATABASE_VERSION = 4;
     private static final String TABLE_HISTORY = "tbl_history";
@@ -41,7 +48,10 @@ public class Database extends SQLiteOpenHelper implements Serializable {
     private static final String KEY_VAR_NAME = "name";
     private static final String KEY_VAR_VALUE = "value";
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/master
     public static final String CREATE_TABLE_VARIABLE =
             "CREATE TABLE " + TABLE_VARIABLE +
                     "(" + KEY_VAR_NAME + " TEXT PRIMARY KEY, " + KEY_VAR_VALUE + " TEXT" + ")";

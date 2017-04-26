@@ -29,9 +29,12 @@ public class ColorUtil {
             LIGHT_GREEN, LIME, YELLOW, ORANGE, BROW, GREY, BLUE_GREY
     };
 
+<<<<<<< HEAD
     /**
      * @return random color of COLOR array
      */
+=======
+>>>>>>> refs/remotes/origin/master
     public int getColorRandom() {
         return COLOR[new Random(new Random().nextLong()).nextInt(COLOR.length - 1)];
     }

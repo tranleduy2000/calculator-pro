@@ -3,7 +3,11 @@ package com.example.duy.calculator.math_eval.base;
 import com.example.duy.calculator.math_eval.Constants;
 
 /**
+<<<<<<< HEAD
  * A super class for BaseModule
+=======
+ * A super class for BaseModule, GraphModule
+>>>>>>> refs/remotes/origin/master
  */
 public class Module {
     // Used for formatting Dec, Bin, and Hex.

@@ -20,7 +20,11 @@ import java.util.ArrayList;
 
 
 /**
+<<<<<<< HEAD
  * Definetion value of list variable
+=======
+ * Definetion getValue() of list variable
+>>>>>>> refs/remotes/origin/master
  * <p>
  * Created by DUy on 04-Dec-16.
  */

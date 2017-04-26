@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/calculator_pro.iml" filepath="$PROJECT_DIR$/calculator_pro.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/Calculator2.iml" filepath="$PROJECT_DIR$/Calculator2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+>>>>>>> refs/remotes/origin/master
       <module fileurl="file://$PROJECT_DIR$/jcm1/jcm1.iml" filepath="$PROJECT_DIR$/jcm1/jcm1.iml" />
     </modules>
   </component>

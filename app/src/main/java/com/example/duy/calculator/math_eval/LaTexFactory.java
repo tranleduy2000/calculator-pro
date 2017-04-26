@@ -5,8 +5,11 @@ import org.matheclipse.core.eval.TeXUtilities;
 import java.io.StringWriter;
 
 /**
+<<<<<<< HEAD
  * Latex factory
  *
+=======
+>>>>>>> refs/remotes/origin/master
  * Created by DUy on 21-Jan-17.
  */
 
