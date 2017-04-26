@@ -1,46 +1,54 @@
-Calculator Pro (NCalc+ pro)
+**Calculator Pro (NCalc+ pro)**
+
 Powerful calculator for Android. 
 
 **Use high technology**
-		- Calcuator hand write (MyScript)
-		- Hand draw geometric (MyScript)
-		- Camera input (Micro Blink)
-		- Voice input (Google)
-		- Symja (Math library)
 
-The Calculator provides the following features:
-** ALGEBRA **
-		1. Computer science 
-		2. Solving the equation: 
-		3. Solve system equations
-		4. Graphing 
-		5. Cartesian geometry sand(Viet Nam Education)
-		6. Unit Conversions
-		8. Simplify expressions 
-		9. Polynomial factorization. 
-		10. Binomial expansion Newton 
-		11. Matrix
+	- Calcuator hand write (MyScript)
+	- Hand draw geometric (MyScript)
+	- Camera input (Micro Blink)
+	- Voice input (Google)
+	- Symja (Math library)
 
-** ANALYTICS **
-		1. Derivative 
-		2. Antiderivative 
-		3. Definite integrals 
-		4. Find the limit of the sequence, function 
+FEATURE:
+
+**ALGEBRA**
+
+	1. Computer science 
+	2. Solving the equation: 
+	3. Solve system equations
+	4. Graphing 
+	5. Cartesian geometry sand(Viet Nam Education)
+	6. Unit Conversions
+	8. Simplify expressions 
+	9. Polynomial factorization. 
+	10. Binomial expansion Newton 
+	11. Matrix
+
+**ANALYTICS**
+
+	1. Derivative 
+	2. Antiderivative 
+	3. Definite integrals 
+	4. Find the limit of the sequence, function 
 
 **TRIGONOMETRIC**
-		1, Trigonometric expand: sin(2x) -> 2sin(x)cos(x)
-		2. Trigonometric reduce: 2sin(x)cos(x) -> sin(2x)
-		3. Trigonometric to exponent: sinh(x) -> (e^x-e^(-x))/2
 
-**DETERMINATION OF STATISTICS **
-		1. Combination 
-		2. Permutation 
+	1. Trigonometric expand: sin(2x) -> 2sin(x)cos(x)
+	2. Trigonometric reduce: 2sin(x)cos(x) -> sin(2x)
+	3. Trigonometric to exponent: sinh(x) -> (e^x-e^(-x))/2
 
-**SOME OTHER FEATURES **
-		1. Prime factors 
-		2. Modulo 
-		3. Catalan number
-		4. Fibonacci number
+**DETERMINATION OF STATISTICS**
+
+	1. Combination 
+	2. Permutation 
+
+**SOME OTHER FEATURES**
+
+	1. Prime factors 
+	2. Modulo 
+	3. Catalan number
+	4. Fibonacci number
 
 The Calculator does not show the steps to solve the equations, system of equations, derivative... but only for the final result.
 Enter **sin(30°)** to calculate sine Degree mode
@@ -54,16 +62,16 @@ Any suggestions on the application please send mail: Tranleduy1233@gmail.com.
 
 **License**
 
-		Copyright 2017 Tran Le Duy
+	Copyright 2017 Tran Le Duy
 
-		Licensed under the Apache License, Version 2.0 (the "License");
-		you may not use this file except in compliance with the License.
-		You may obtain a copy of the License at
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
 
-			http://www.apache.org/licenses/LICENSE-2.0
+		http://www.apache.org/licenses/LICENSE-2.0
 
-		Unless required by applicable law or agreed to in writing, software
-		distributed under the License is distributed on an "AS IS" BASIS,
-		WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-		See the License for the specific language governing permissions and
-		limitations under the License.
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
